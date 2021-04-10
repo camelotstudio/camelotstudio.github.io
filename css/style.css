@@ -1,13 +1,14 @@
 :root {
   --background-color: #fff;
-  --text-color: #121416d8;
-  --link-color: #543fd7;
+  --text-color: #272C35;
+  --sec-text-color:#314261;
+  --link-color: #647697;
 }
 
 html[data-theme='light'] {
   --background-color: #fff;
-  --text-color: #121416d8;
-  --link-color: #543fd7;
+  --text-color: #272C35;
+  --link-color: #647697;
 }
 
 html[data-theme='dark'] {
@@ -45,8 +46,23 @@ a:hover {
 }
 
 .img-D{
-  background-image: url("../assets/img/dark-bg.svg");
   height: 100vh;
-  background-repeat: no-repeat;
   z-index: -1;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+[data-theme='dark'] .img-D{
+  background-image: url("../assets/img/dark-bg.svg");
+  
   }
+[data-theme='light'] .img-D{
+  background-image: url("../assets/img/light-bg.svg");
+}
+homepagTitle {
+  font-size: 4.5em;
+  letter-spacing: 3px;
+}
+.homeMobileCont{
+  position: absolute;
+}
