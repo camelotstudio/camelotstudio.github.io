@@ -43,6 +43,7 @@ a:hover {
 [data-theme='light'] .d-block-light,
 [data-theme='dark'] .d-block-dark {
     display: block !important;
+    color: var(--text-color);
 }
 
 .img-D{
@@ -132,7 +133,13 @@ homepagTitle {
 }
 .navbar-collapse {
   width: 100%;
-  background: var(--background-color) !important;
+  background:linear-gradient(
+    to bottom, 
+    var(--background-color) 60%,
+    #A2A2A2 100px,
+    var(--background-color) calc(100% - 500px),
+    #A2A2A2  110%
+  ) !important;
   position: fixed;
   z-index: 9;
   display: block;
@@ -143,22 +150,27 @@ homepagTitle {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: all 0.4s;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
 }
 .navbar-collapse ul.navbar-nav {
-  margin-top: 10rem;
+  margin-top: 9rem;
 }
 .navbar-collapse ul.navbar-nav li {
   opacity: 0;
   transition: opacity 0.4s cubic-bezier(0.58, 0.3, 0.005, 1);
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 2em;
 }
 .navbar-collapse ul.navbar-nav li a {
   color: var(--text-color);
   font-size: 40px;
   padding: 0;
 }
+/*
+.navbar-collapse ul.navbar-nav li div {
+  color: var(--text-color);
+  padding: 0;
+}*/
 .navbar-collapse.show {
   min-height: 100vh;
   visibility: visible;
@@ -251,3 +263,6 @@ border-bottom-left-radius:5px;
 }
 
 /* NAVBAR */
+/* webDesign & business */
+
+/* webDesign & business */
