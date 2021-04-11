@@ -22,11 +22,11 @@
   gtag('config', 'UA-177302072-1');
 </script>
 <body>
-    <header>
+    <header class="imgMoblieBG">
         <div class="navbar-wrapper">
         <div class="navbar navbar-expand-md">
           <div class="container">
-            <a href="#" class="navbar-brand"><div class="logo"></div></a>
+            <a href="index.html" class="navbar-brand"><div class="logo"></div></a>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCamelot" aria-controls="navbarCamelot" aria-expanded="false" aria-label="Toggle navigation">
                 <div id="nav-icon">
                     <span></span><span></span><span></span><span></span>
@@ -84,14 +84,14 @@
             <!-- mobile -->
             <div class="d-md-none homeMobileCont">
                 <homepagTitle>CAMELOT</homepagTitle>
-                <h1>studio MO</h1>
-                <h4>
+                <h1 class="text-start mx-5">studio MO</h1>
+                <h5>
                     邁開網路世界的第一步!
-                </h4>
+                </h5>
                 
             </div>
             <!-- mobile -->
-            <div class="col-md-6 col-12 p-0">
+            <div class="col-md-6 col-12 p-0 d-none d-md-block m-auto">
                 <div class="img-D"></div>
             </div>
         </div>
@@ -103,6 +103,9 @@
     <!-- Script -->
     <script src="vendor/jquery-3.6.0.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      
+    </script>
     <script>
         var toggle = document.getElementById("theme-toggle");
         
@@ -122,6 +125,7 @@
             document.documentElement.setAttribute('data-theme', targetTheme)
             localStorage.setItem('theme', targetTheme);
         };
+        
     </script>
 </body>
 </html>
