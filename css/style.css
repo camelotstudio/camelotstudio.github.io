@@ -311,6 +311,7 @@ border-bottom-left-radius:5px;
   overflow: visible !important;
 }
 .webD-Mo{
+  margin-top: 1.5em;
   min-height: 304px;
   min-width: 400px;
   width: 100%;
@@ -318,9 +319,6 @@ border-bottom-left-radius:5px;
   padding:0;
   z-index: -1;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   overflow: hidden !important;
 }
