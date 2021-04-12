@@ -171,8 +171,9 @@ homepagTitle {
     to bottom, 
     var(--background-color) 60%,
     #A2A2A2 100px,
-    var(--background-color) calc(100% - 500px),
+    var(--background-color) calc(100% - 500px) 30%,
     #A2A2A2  110%
+    
   ) !important;
   position: fixed;
   z-index: 9;
@@ -311,7 +312,6 @@ border-bottom-left-radius:5px;
   overflow: visible !important;
 }
 .webD-Mo{
-  margin-top: 1.5em;
   min-height: 288px;
   width: 100%;
   height: 35vh;
@@ -341,12 +341,38 @@ border-bottom-left-radius:5px;
 .businessD {
   background-image: url("../assets/img/desginBusiness.svg");
 }
+.businessD-Mo{
+  min-height: 326px;
+  width: 100%;
+  height: 35vh;
+  padding:0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden !important;
+}
 .p-indent{
   text-indent:2em;
 }
 .le-space{
   letter-spacing: .1em;
 }
+.le-space-price{
+  font-size: 1.25em;
+  letter-spacing: .5em;
+  text-decoration: none;
+  color: var(--text-color);
+}
+.le-space-price:hover {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.le-space-price:active {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+
 .webProcess{
   margin: 1em auto .5em auto;
   width: 50px;
