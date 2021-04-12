@@ -314,13 +314,25 @@ border-bottom-left-radius:5px;
   margin-top: 1.5em;
   min-height: 288px;
   width: 100%;
-  height: auto;
+  height: 35vh;
   padding:0;
   z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden !important;
 }
+@media (min-width: 455px){
+  .webD-Mo{
+    height: 40vh;
+  }}
+  @media (min-width: 456px) and (max-width: 525px){
+    .webD-Mo{
+      height: 45vh;
+    }}
+    @media (min-width: 526px){
+      .webD-Mo{
+        height: 47vh;
+      }}
 .desginPageSet{
   position: absolute;
   width: 35vw;
@@ -334,5 +346,64 @@ border-bottom-left-radius:5px;
 }
 .le-space{
   letter-spacing: .1em;
+}
+.webProcess{
+  margin: 1em auto .5em auto;
+  width: 50px;
+  height: 50px;
+  padding:0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.textProcess{
+  font-size: .5em;
+}
+[data-theme='light'] .w-idea{
+  background-image: url("../assets/img/dark-step/w-idea.svg");
+}
+[data-theme='light'] .w-fristDraft{
+  background-image: url("../assets/img/dark-step/w-fristDraft.svg");
+}
+[data-theme='light'] .w-doIt{
+  background-image: url("../assets/img/dark-step/w-doIt.svg");
+}
+[data-theme='light'] .w-maintain{
+  background-image: url("../assets/img/dark-step/w-maintain.svg");
+}
+[data-theme='light'] .b-idea{
+  background-image: url("../assets/img/dark-step/b-idea.svg");
+}
+[data-theme='light'] .b-fristDraft{
+  background-image: url("../assets/img/dark-step/b-firstDraft.svg");
+}
+[data-theme='light'] .b-doIt{
+  background-image: url("../assets/img/dark-step/b-doIt.svg");
+}
+[data-theme='light'] .b-done{
+  background-image: url("../assets/img/dark-step/b-done.svg");
+}
+[data-theme='dark'] .w-idea{
+  background-image: url("../assets/img/light-step/w-idea.svg");
+}
+[data-theme='dark'] .w-fristDraft{
+  background-image: url("../assets/img/light-step/w-fristDraft.svg");
+}
+[data-theme='dark'] .w-doIt{
+  background-image: url("../assets/img/light-step/w-doIt.svg");
+}
+[data-theme='dark'] .w-maintain{
+  background-image: url("../assets/img/light-step/w-maintain.svg");
+}
+[data-theme='dark'] .b-idea{
+  background-image: url("../assets/img/light-step/b-idea.svg");
+}
+[data-theme='dark'] .b-fristDraft{
+  background-image: url("../assets/img/light-step/b-firstDraft.svg");
+}
+[data-theme='dark'] .b-doIt{
+  background-image: url("../assets/img/light-step/b-doIt.svg");
+}
+[data-theme='dark'] .b-done{
+  background-image: url("../assets/img/light-step/b-done.svg");
 }
 /* webDesign & business */
