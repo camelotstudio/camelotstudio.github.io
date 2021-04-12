@@ -440,11 +440,13 @@ border-bottom-left-radius:5px;
   width: 30%;
   min-width: 100px;
 }
+/* img closer */
 .meb-special-position{
   position: absolute;
-    top: 3.25em;
+    top: 1vh;
     text-align: center;
 }
+/* img closer */
 .aboutUsTitle{
   width: 5em;
   text-align: center;
