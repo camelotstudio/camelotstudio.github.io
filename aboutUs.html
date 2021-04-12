@@ -22,7 +22,7 @@
   gtag('config', 'UA-177302072-1');
 </script>
 <body>
-    <header class="imgMoblieBG">
+    <header>
         <div class="navbar-wrapper">
         <div class="navbar navbar-expand-md">
           <div class="container">
@@ -72,43 +72,64 @@
         </nav>
         <!-- .nav -->
     
-      </header>
+    </header>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 d-none d-md-block m-auto">
-                <div class="px-5">
-                    <homepagTitle class="ps-5">CAMELOT</homepagTitle>
-                    <h1 class="ps-5">studio</h1>
-                    <h4 class="ps-5">
-                    邁開網路世界的第一步!
-                    </h4>
+      <div class="row">
+        <div class="webD webD-PC d-none d-md-block my-auto">
+          <div class="desginPageSet d-none d-md-block m-auto">
+            <h1 class="my-4">網頁設計</h1>
+            <p class="text-wrap lh-base fs-4 mb-4 p-indent">
+              本工作室所提供的服務有別於市面上制式套版的服務，堅持完全客製化設計，力保網站內容能以最適合的方式呈現。
+            </p>
+            <p class="text-wrap lh-base fs-4 p-indent">不懂技術也沒關係！本工作室提供免費的諮詢服務，在您確定使用我們的服務前，可以先交由我們為您初步規畫網站版面，修改到喜歡再開始動工。</p>
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="d-md-none">
+            <!--img meb-->
+            <div class="mt-4 mb-5  row" style="position: relative;">
+                <div class="col-6 p-0 text-center mb-2">
+                    <img class="meb-pic-style" src="assets/img/meb01.svg" alt="">
+                </div>
+                <div class="col-6 p-0 text-center mb-2">
+                    <img class="meb-pic-style" src="assets/img/meb02.svg" alt="">
+                </div>
+                <div class=" meb-special-position">
+                    <img class="meb-pic-style" src="assets/img/meb03.svg" alt="">
+                </div>
+                <div class="col-6 p-0 text-center">
+                    <img class="meb-pic-style" src="assets/img/meb04.svg" alt="">
+                </div>
+                <div class="col-6 p-0 text-center">
+                    <img class="meb-pic-style" src="assets/img/meb05.svg" alt="">
                 </div>
             </div>
-            <!-- mobile -->
-            <div class="d-md-none homeMobileCont">
-                <homepagTitle>CAMELOT</homepagTitle>
-                <h1 class="text-start mx-5">studio MO</h1>
-                <h5>
-                    邁開網路世界的第一步!
-                </h5>
-                
-            </div>
-            <!-- mobile -->
-            <div class="col-md-6 col-12 p-0 d-none d-md-block m-auto">
-                <div class="img-D"></div>
-            </div>
+            <!--img meb-->
+            <!--info-->
+              <div class="container">
+                <div class="mx-4 mb-4">
+                    <h4 class=" mb-3 le-space text-whtie aboutUsTitle autColor">關於我們</h4>
+                    <div class="mx-2">
+                        <p>Email：info@camelotstudio.tw</p>
+                        <p>電話：+886 0937-478-883</p>
+                        <p>統一編號：85470208</p>
+                    </div>
+                    <h4 class="mt-5 mb-3 le-space text-whtie aboutUsTitle svsColor">服務介紹</h4>
+                    <p class="text-wrap lh-base p-indent le-space mx-2">不懂技術也沒關係！本工作室提供免費的諮詢服務，在您確定使用我們的服務前，可以先交由我們為您初步規畫網站版面，修改到喜歡再開始動工。</p>
+                </div>
+              </div>
+            <!--info-->
+            <!--Introduction-->
+            <!--Introduction-->
+          </div>
         </div>
-        
-        
-        
+        <!-- mobile -->
+      </div> 
     </div>
 
     <!-- Script -->
     <script src="vendor/jquery-3.6.0.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script>
-      
-    </script>
     <script>
         var toggle = document.getElementById("theme-toggle");
         
@@ -128,7 +149,6 @@
             document.documentElement.setAttribute('data-theme', targetTheme)
             localStorage.setItem('theme', targetTheme);
         };
-        
     </script>
 </body>
 </html>

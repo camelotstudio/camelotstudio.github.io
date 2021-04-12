@@ -189,7 +189,7 @@ homepagTitle {
   overflow-y: scroll !important;
 }
 .navbar-collapse ul.navbar-nav {
-  margin-top: 9rem;
+  margin-top: 7rem;
 }
 .navbar-collapse ul.navbar-nav li {
   opacity: 0;
@@ -433,3 +433,30 @@ border-bottom-left-radius:5px;
   background-image: url("../assets/img/light-step/b-done.svg");
 }
 /* webDesign & business */
+/* aboutUS */
+.meb-pic-style{
+  border-radius: 50%;
+  border:5px solid #2064B4;
+  width: 30%;
+  min-width: 100px;
+}
+.meb-special-position{
+  position: absolute;
+    top: 3.25em;
+    text-align: center;
+}
+.aboutUsTitle{
+  width: 5em;
+  text-align: center;
+  padding: 4px 2px;
+  border-radius: 5px;
+}
+.autColor{
+  background-color: #155E6B;
+  color: #FFF;
+}
+.svsColor{
+  background-color: #20B47F;
+  color: #FFF;
+}
+/* aboutUS */
