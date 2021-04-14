@@ -513,3 +513,39 @@ border-bottom-left-radius:5px;
 
 /* masonryLayout */
 /* works */
+/* sourceShare */
+.triangle{
+  width: 40%;
+  height: 100%;
+  border-radius:5px;
+}
+.triangle-rb{
+  background: linear-gradient(to right bottom, #155E6B 50%, transparent 50%)
+}
+.triangle-lt{
+  background: linear-gradient(to left top, #155E6B 50%, transparent 50%)
+}
+
+.img-mask-1{
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  height: 100%;
+  width: 40%;
+  border-color:  transparent transparent transparent #155E6B;
+}
+.img-mask-2{
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  border-color: #155E6B transparent transparent  transparent ;
+}
+.shareHr{
+  border: 2px solid #34BB8A;
+  border-radius:10px;
+  margin: 0.5rem 0;
+  opacity: 1;
+}
+/* sourceShare */
