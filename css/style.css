@@ -548,4 +548,16 @@ border-bottom-left-radius:5px;
   margin: 0.5rem 0;
   opacity: 1;
 }
+.shareBtn{
+  background: #155E6B;
+  color: #F7F8F8;
+  border: 1px solid grey;
+  height: auto;
+}
+.shareSearch input[type=text]{
+  border: 1px solid grey;
+  padding: .375rem .75rem;
+  font-size: 1em;
+  vertical-align:middle;
+}
 /* sourceShare */
