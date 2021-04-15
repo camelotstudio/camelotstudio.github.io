@@ -437,9 +437,9 @@ border-bottom-left-radius:5px;
 .meb-pic-style{
   border-radius: 50%;
   border:5px solid #2064B4;
-  width: 30%;
-  min-width: 100px;
+  background-color: var(--background-color);
 }
+
 /* img closer */
 .meb-special-position{
   position: absolute;
