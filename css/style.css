@@ -439,7 +439,9 @@ border-bottom-left-radius:5px;
   border:5px solid #2064B4;
   background-color: var(--background-color);
 }
-
+.meb-pic-img{
+  width: 30%;
+  min-width: 100px;}
 /* img closer */
 .meb-special-position{
   position: absolute;
