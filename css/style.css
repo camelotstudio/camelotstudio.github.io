@@ -565,4 +565,15 @@ border-bottom-left-radius:5px;
   border-radius: 5px 0 0 5px;
 
 }
+.badge-scrool-x button {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.badge-scrool-x{
+  overflow: auto;
+  white-space: nowrap;
+}
 /* sourceShare */
