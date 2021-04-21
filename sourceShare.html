@@ -23,8 +23,8 @@
   <body>
     <header>
       <div class="navbar-wrapper">
-        <div class="navbar navbar-expand-md">
-          <div class="container">
+        <div class="navbar py-0 backdrop-blur fixed-top">
+          <div class="container-fluid">
             <a href="index.html" class="navbar-brand"><div class="logo"></div></a>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCamelot" aria-controls="navbarCamelot" aria-expanded="false" aria-label="Toggle navigation">
               <div id="nav-icon">
@@ -71,7 +71,7 @@
       </nav>
         <!-- .nav -->
     </header>
-    <div class="container">
+    <div class="container nav-height">
       <div class="h2 mb-3">技術分享</div>
       <!--search-->
       <form action="" style="width: 100%;">
@@ -258,6 +258,11 @@
             document.documentElement.setAttribute('data-theme', targetTheme)
             localStorage.setItem('theme', targetTheme);
         };
+
+        $('#nav-icon').click(function(){
+          $(".navbar-expand-md").toggleClass('backdrop-blur');
+          $(".navbar-expand-md").toggleClass('backdrop-blur-none');
+        });
     </script>
   </body>
 </html>

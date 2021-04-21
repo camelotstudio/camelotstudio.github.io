@@ -22,8 +22,8 @@
   <body>
     <header>
       <div class="navbar-wrapper">
-        <div class="navbar navbar-expand-md">
-          <div class="container">
+        <div class="navbar py-0 backdrop-blur fixed-top">
+          <div class="container-fluid">
             <a href="index.html" class="navbar-brand"><div class="logo"></div></a>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCamelot" aria-controls="navbarCamelot" aria-expanded="false" aria-label="Toggle navigation">
               <div id="nav-icon">
@@ -71,7 +71,7 @@
       <!-- .nav -->
       
     </header>
-    <div class="container-fluid">
+    <div class="container-fluid nav-height">
       <div class="row">
         <div class="businessD webD-PC d-none d-md-block my-auto">
           <div class="desginPageSet d-none d-md-block m-auto">
@@ -148,6 +148,11 @@
         document.documentElement.setAttribute('data-theme', targetTheme)
         localStorage.setItem('theme', targetTheme);
     };
+
+    $('#nav-icon').click(function(){
+          $(".navbar-expand-md").toggleClass('backdrop-blur');
+          $(".navbar-expand-md").toggleClass('backdrop-blur-none');
+        });
   </script>
   </body>
 </html>
