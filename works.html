@@ -23,7 +23,7 @@
   <body>
     <header>
       <div class="navbar-wrapper">
-        <div class="navbar navbar-expand-md">
+        <div class="navbar navbar-expand-md backdrop-blur fixed-top">
           <div class="container">
             <a href="index.html" class="navbar-brand"><div class="logo"></div></a>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCamelot" aria-controls="navbarCamelot" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,7 +71,7 @@
       </nav>
       <!-- .nav -->
     </header>
-    <div class="masonry px-2">
+    <div class="masonry nav-height px-2">
       <div class="masonry-item"><img src="https://unsplash.it/700/800?image=1" alt="Masonry Brick #1" class="masonry-content"></div>
       <div class="masonry-item"><img src="https://unsplash.it/700/600?image=2" alt="Masonry Brick #2" class="masonry-content"></div>
       <div class="masonry-item"><img src="https://unsplash.it/700/400?image=3" alt="Masonry Brick #3" class="masonry-content"></div>
@@ -230,6 +230,11 @@
         /* Do a resize once more when all the images finish loading */
         waitForImages();
 
+        $('#nav-icon').click(function(){
+          $(".navbar-expand-md").toggleClass('backdrop-blur');
+          $(".navbar-expand-md").toggleClass('backdrop-blur-none');
+
+        });
     </script>
   </body>
 </html>

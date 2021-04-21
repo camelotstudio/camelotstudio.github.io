@@ -9,12 +9,16 @@ html[data-theme='light'] {
   --background-color: #fff;
   --text-color: #272C35;
   --link-color: #647697;
+  --opacity-color: rgba(255,255,255,0.5);
+  --opacity-color-hover: rgba(255,255,255,0.75);
 }
 
 html[data-theme='dark'] {
   --background-color: #212a2e;
   --text-color: #F7F8F8;
   --link-color: #828fff;
+  --opacity-color: rgba(0,0,0,0.5);
+  --opacity-color-hover: rgba(0,0,0,0.75);
 }
 
 body {
@@ -165,16 +169,25 @@ homepagTitle {
 .navbar-expand-md .container .navbar-toggler {
   display: block;
 }
-.navbar-collapse {
-  width: 100%;
+/*
   background:linear-gradient(
     to bottom, 
     var(--background-color) 60%,
-    #A2A2A2 100px,
+    rgba(0,0,0,0.2) 200px,
     var(--background-color) calc(100% - 500px) 30%,
-    #A2A2A2  110%
-    
+    rgba(0,0,0,0.2) 115%
   ) !important;
+  background:linear-gradient(
+    to bottom, 
+    var(--background-color) 60%,
+    var(--opacity-color) 200px,
+    var(--background-color) calc(100% - 500px) 30%,
+    var(--opacity-color) 115%
+  ) !important;
+*/
+.navbar-collapse {
+  width: 100%;  
+  background: var(--background-color);
   position: fixed;
   z-index: 9;
   display: block;
@@ -186,7 +199,11 @@ homepagTitle {
   width: 100%;
   height: 100%;
   transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
-  overflow-y: scroll !important;
+}
+@media (max-width: 576px){
+  .navbar-collapse{
+    overflow-y: scroll !important;
+  }
 }
 .navbar-collapse ul.navbar-nav {
   margin-top: 7rem;
@@ -298,6 +315,15 @@ border-bottom-left-radius:5px;
   top: 14px;
 }
 
+.nav-height{
+  margin-top: 75px;
+}
+.backdrop-blur {
+  backdrop-filter: blur(10px);
+}
+.backdrop-blur-none {
+  background: var(--background-color) !important;
+}
 /* NAVBAR */
 /* webDesign & business */
 .webD {
@@ -501,7 +527,7 @@ border-bottom-left-radius:5px;
 
 .masonry-item:after {
   font-weight: bold;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: var(--opacity-color);
   content: counter(masonry);
   counter-increment: masonry;
   position: absolute;
@@ -509,7 +535,7 @@ border-bottom-left-radius:5px;
   left: 0; 
   height: 100%;
   width: 100%;
-  color: white;
+  color: var(--text-color);
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -518,7 +544,7 @@ border-bottom-left-radius:5px;
 
 .masonry-item:hover:after {
   font-size: 30px;
-  background-color: rgba(0, 0, 0, .75);
+  background-color: var(--opacity-color-hover);
 }
 
 /* masonryLayout */
