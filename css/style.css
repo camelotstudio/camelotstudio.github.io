@@ -550,16 +550,29 @@ border-bottom-left-radius:5px;
 /* masonryLayout */
 /* works */
 /* sourceShare */
+
 .triangle{
-  width: 40%;
-  height: 100%;
-  border-radius:5px;
+  border-radius:4px;
 }
 .triangle-rb{
-  background: linear-gradient(to right bottom, #155E6B 50%, transparent 50%)
+  display: block;
+  top: 0;
+  bottom: 0;
+  width: 25px;
+  height: 100%;
+  background: #155E6B;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 50%);
+  clip-path: polygon(-100% -100%, 0% 100%, 100% 0);
 }
 .triangle-lt{
-  background: linear-gradient(to left top, #155E6B 50%, transparent 50%)
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 25px;
+  height: 100%;
+  background: #155E6B;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 50%);
+  clip-path: polygon(100% 0,  0 100%, 100% 100%);
 }
 
 .img-mask-1{
