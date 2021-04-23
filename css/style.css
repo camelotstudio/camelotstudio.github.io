@@ -510,14 +510,12 @@ border-bottom-left-radius:5px;
   }
 }
 
-.masonry-item {
-  border-radius: 5px;
-}
 
 .masonry-item {
    background-color: #eee;
    border-radius: 5px;
    overflow: hidden;
+   cursor: pointer;
 }
 
 .masonry-item,
