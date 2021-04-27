@@ -9,7 +9,7 @@ html[data-theme='light'] {
   --background-color: #fff;
   --text-color: #272C35;
   --link-color: #647697;
-  --opacity-color: rgba(255,255,255,0.5);
+  --opacity-color: rgba(255,255,255,0.3);
   --opacity-color-hover: rgba(255,255,255,0.75);
 }
 
@@ -17,7 +17,7 @@ html[data-theme='dark'] {
   --background-color: #212a2e;
   --text-color: #F7F8F8;
   --link-color: #828fff;
-  --opacity-color: rgba(0,0,0,0.5);
+  --opacity-color: rgba(0,0,0,0.3);
   --opacity-color-hover: rgba(0,0,0,0.75);
 }
 
@@ -522,7 +522,35 @@ border-bottom-left-radius:5px;
 .masonry-item img {
    position: relative;
 }
+.masonry-item:hover .masonry-description-layer {
+  transition: all .1s ease-in;
+  visibility: visible;
+  opacity: 1;
+}
 
+.masonry-description-layer{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--opacity-color-hover);
+  color: var(--text-color);
+  visibility: hidden;
+  opacity: 0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.masonry-item:hover .imasonry-description {
+  transition: all .1s ease-in;
+}
+
+.masonry-description{
+  transition: all .1s ease-in;
+}
+/*
 .masonry-item:after {
   font-weight: bold;
   background-color: var(--opacity-color);
@@ -538,13 +566,14 @@ border-bottom-left-radius:5px;
   justify-content: center; 
   align-items: center;
   transition: all .1s ease-in;
+  text-indent:-9999px;
 }
 
 .masonry-item:hover:after {
   font-size: 30px;
   background-color: var(--opacity-color-hover);
-}
-
+  text-indent:unset;}
+  */
 /* masonryLayout */
 /* works */
 /* sourceShare */
