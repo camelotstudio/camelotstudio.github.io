@@ -384,7 +384,6 @@ border-bottom-left-radius:5px;
   letter-spacing: .1em;
 }
 .le-space-price{
-  font-size: 1.25em;
   letter-spacing: .5em;
   text-decoration: none;
   color: var(--text-color);
@@ -653,3 +652,35 @@ border-bottom-left-radius:5px;
   white-space: nowrap;
 }
 /* sourceShare */
+/*webPrice*/
+.priceTitleBorder{
+  border-bottom: 1px solid var(--text-color);
+  line-height: 2em;
+}
+.priceTitleBorder-r{
+  border-bottom: 1px solid var(--background-color);
+  line-height: 2em;
+}
+.reverseLr{
+  border-radius: 0 20px 20px 0;
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+.priceImg{
+  background-image: url("../assets/img/webP01.svg");
+  padding: 0 !important;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: calc(100% + 1.5em);
+  height: 65vh;
+  min-height: 400px;
+  bottom:0;
+}
+.priceHeight{
+  height: calc(100vh - 4.5rem);
+  min-height: 790px;
+  position: relative;
+}
+/*webPrice*/
