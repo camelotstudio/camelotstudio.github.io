@@ -10,7 +10,7 @@ html[data-theme='light'] {
   --text-color: #272C35;
   --link-color: #647697;
   --opacity-color: rgba(255,255,255,0.3);
-  --opacity-color-hover: rgba(255,255,255,0.75);
+  --opacity-color-hover: rgba(255,255,255,0.7);
 }
 
 html[data-theme='dark'] {
@@ -18,7 +18,7 @@ html[data-theme='dark'] {
   --text-color: #F7F8F8;
   --link-color: #828fff;
   --opacity-color: rgba(0,0,0,0.3);
-  --opacity-color-hover: rgba(0,0,0,0.75);
+  --opacity-color-hover: rgba(0,0,0,0.7);
 }
 
 body {
@@ -549,6 +549,8 @@ border-bottom-left-radius:5px;
 
 .masonry-description{
   transition: all .1s ease-in;
+  font-weight: bolder;
+  font-size: 1.5em;
 }
 /*
 .masonry-item:after {
