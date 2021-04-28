@@ -49,13 +49,17 @@ a:hover {
     display: block !important;
     color: var(--text-color);
 }
-.imgMoblieBG{
-  height: calc(100vh - 4.5rem);
+.imgMoblieBGSet{
+  height: calc(100vh);
   z-index: -1;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.imgMoblieLayer01{
+  background-image: url('../assets/img/smallpanel-line.svg');
+}
+
 @media (min-width: 767px){
   [data-theme='dark'] .imgMoblieBG{
     background-image: none;
@@ -68,7 +72,7 @@ a:hover {
 }
 @media (max-width: 768px){
   [data-theme='dark'] .imgMoblieBG{
-    background-image: url("../assets/img/dark-bg.svg");
+    background-image: url("../assets/img/BG.svg");
     
     }
   [data-theme='light'] .imgMoblieBG{
