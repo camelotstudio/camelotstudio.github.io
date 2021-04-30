@@ -27,7 +27,7 @@
       </div>
 
       <div class="navbar-wrapper">
-        <div class="navbar fixed-top py-0">
+        <div class="navbar fixed-top backdrop-blur py-0">
           <!-- .container -->
           <div class="container-fluid">
             <a href="index.html" class="navbar-brand"><div class="logo"></div></a>
@@ -42,13 +42,13 @@
         <!-- .navbar -->
       </div>
       <nav id="scrollMenu">
-        <div id="navbarCamelot" class="navbar-collapse collapse">
+        <div id="navbarCamelot" class="navbar-collapse collapse show">
           <ul id="main-menu" class="navbar-nav navbar-container">
             <li class="nav-item">
               <a href="#webDesign" class="nav-link">網頁設計</a>
             </li>
             <li class="nav-item">
-              <a href="businessDesgin.html" class="nav-link">商業設計</a>
+              <a href="#businessDesgin" class="nav-link">商業設計</a>
             </li>
             <li class="nav-item">
               <a href="aboutUs.html" class="nav-link">關於我們</a>
@@ -100,91 +100,134 @@
         <div class="col-md-6 col-12 p-0 d-none d-md-block m-auto">
           <div class="img-D"></div>
         </div>
+        <!--webDesign-->
         <section id="webDesign" data-bs-spy="scroll" data-bs-target="#scrollMenu" data-bs-offset="0" tabindex="0">
-            <div class="webD webD-PC d-none d-md-block my-auto">
-              <div class="desginPageSet d-none d-md-block m-auto">
-                <h1 class="my-4">網頁設計</h1>
-                <p class="text-wrap lh-base fs-4 mb-4 p-indent">
-                  本工作室所提供的服務有別於市面上制式套版的服務，堅持完全客製化設計，力保網站內容能以最適合的方式呈現。
-                </p>
-                <p class="text-wrap lh-base fs-4 p-indent">不懂技術也沒關係！本工作室提供免費的諮詢服務，在您確定使用我們的服務前，可以先交由我們為您初步規畫網站版面，修改到喜歡再開始動工。</p>
+          <div class="webD d-none d-md-block">
+              <h1 class="mb-4">網頁設計</h1>
+              <p class="text-wrap lh-base fs-4 mb-4 p-indent">
+                本工作室所提供的服務有別於市面上制式套版的服務，堅持完全客製化設計，力保網站內容能以最適合的方式呈現。
+              </p>
+              <p class="text-wrap lh-base fs-4 p-indent">不懂技術也沒關係！本工作室提供免費的諮詢服務，在您確定使用我們的服務前，可以先交由我們為您初步規畫網站版面，修改到喜歡再開始動工。</p>
+            </div>
+          </div>
+          <div class="d-md-none">
+            <div class="row mt-5">
+              <div class="col-12 p-0 mt-4">
+                <div class="webD webD-Mo"></div>
+              </div>
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-8">
+                    <div class="ps-4">
+                      <h1 class="my-3 le-space">網頁設計</h1>
+                      <p class="text-wrap lh-base mb-3 p-indent le-space">
+                        本工作室所提供的服務有別於市面上制式套版的服務，堅持完全客製化設計，力保網站內容能以最適合的方式呈現。
+                      </p>
+                      <p class="text-wrap lh-base p-indent le-space">不懂技術也沒關係！本工作室提供免費的諮詢服務，在您確定使用我們的服務前，可以先交由我們為您初步規畫網站版面，修改到喜歡再開始動工。</p>
+                    </div>
+                    <a href="#webPrice" class=" le-space-price"><h5 class="mx-4 fw-bold">價目表 <img src="assets/img/toPrice.svg" alt=""></h5></a>
+                  </div>
+                  <div class="col-4 text-center m-auto">
+                    <div class="row">
+                      <div class="col-sm-6 col-12">
+                        <div class="w-idea webProcess"></div>
+                        <span class="textProcess">發案/需求統整</span>
+                      </div>
+                      <div class="col-sm-6 col-12">
+                        <div class="w-fristDraft webProcess"></div>
+                        <span class="textProcess">初步設計稿</span>
+                      </div>
+                      <div class="col-sm-6 col-12">
+                        <div class="w-doIt webProcess"></div>
+                        <span class="textProcess">網頁製作</span>
+                      </div>
+                      <div class="col-sm-6 col-12">
+                        <div class="w-maintain webProcess"></div>
+                        <span class="textProcess">上線/持續維護</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- mobile -->
-            <div class="d-md-none">
-                <div class="row">
-                  <div class="col-12 p-0">
-                    <div class="webD webD-Mo"></div>
+          </div>
+          <!--SCROOL-->
+          <div class="pt-4"></div>
+          <div id="webPrice" data-bs-spy="scroll" data-bs-offset="0" tabindex="0"></div>
+          <div class="pt-4"></div>
+          <div class="d-md-none"> 
+            <div class="priceHeight">
+              <div class="priceImg row"></div>
+              <div  class=" py-4 " style="margin-top:3em;">
+                <h1 class="le-space mx-4 le-space-price fw-bold">價目表</h1>
+                <div class="row my-4">
+                  <div class="col-6 py-3 ps-4 pe-0 reverseLr">
+                    <h5 class="priceTitleBorder-r fw-bold mb-3">單頁網站設計</h5>
+                    <p class="">多頁網站設計</p>
+                    <p class="">簡單資料主細表</p>
+                    <p class="">關聯式主細表</p>
+                    <p class="">會員系統</p>
                   </div>
-                  <div class="col-12">
-                    <div class="row">
-                      <div class="col-8">
-                        <div class="ps-4">
-                        <h1 class="my-4 le-space">網頁設計</h1>
-                        <p class="text-wrap lh-base mb-3 p-indent le-space">
-                          本工作室所提供的服務有別於市面上制式套版的服務，堅持完全客製化設計，力保網站內容能以最適合的方式呈現。
-                        </p>
-                        <p class="text-wrap lh-base p-indent le-space">不懂技術也沒關係！本工作室提供免費的諮詢服務，在您確定使用我們的服務前，可以先交由我們為您初步規畫網站版面，修改到喜歡再開始動工。</p>
-                        </div>
-                        <a href="#webPrice" class=" le-space-price"><h5 class="mx-4 fw-bold">價目表 <img src="assets/img/toPrice.svg" alt=""></h5></a>
-                      </div>
-                      <div class="col-4 text-center m-auto">
-                        <div class="row">
-                          <div class="col-sm-6 col-12">
-                            <div class="w-idea webProcess"></div>
-                            <span class="textProcess">發案/需求統整</span>
-                          </div>
-                          <div class="col-sm-6 col-12">
-                            <div class="w-fristDraft webProcess"></div>
-                            <span class="textProcess">初步設計稿</span>
-                          </div>
-                          <div class="col-sm-6 col-12">
-                            <div class="w-doIt webProcess"></div>
-                            <span class="textProcess">網頁製作</span>
-                          </div>
-                          <div class="col-sm-6 col-12">
-                            <div class="w-maintain webProcess"></div>
-                            <span class="textProcess">上線/持續維護</span>
-                          </div>
-                        </div>
-                      </div>
+                  <div class="col-6 py-3 pe-4 ps-0">
+                    <h5 class="fs-6 priceTitleBorder mt-2 text-end">＄9,999起</h5>
+                    <div class="px-4">
+                      <table style="width: 100%;">
+                        <tr><td>草圖提供</td><td class="text-end">2版</td></tr>
+                        <tr><td>可修改</td><td class="text-end">1次</td></tr>
+                      </table>
                     </div>
                   </div>
                 </div>
               </div>
-                <!--SCROOL-->
-                <div class="pt-4"></div>
-                <div id="webPrice" data-bs-spy="scroll" data-bs-offset="0" tabindex="0"></div>
-                <div class="pt-4"></div>
-              <div class="d-md-none"> 
-                <div class="priceHeight">
-                  <div class="priceImg row"></div>
-                  <div  class=" py-4 " style="margin-top:3em;">
-                    <h1 class="le-space mx-4 le-space-price fw-bold">價目表</h1>
-                    <div class="row my-4">
-                      <div class="col-6 py-3 ps-4 pe-0 reverseLr">
-                        <h5 class="priceTitleBorder-r fw-bold mb-3">單頁網站設計</h5>
-                        <p class="">多頁網站設計</p>
-                        <p class="">簡單資料主細表</p>
-                        <p class="">關聯式主細表</p>
-                        <p class="">會員系統</p>
-                      </div>
-                      <div class="col-6 py-3 pe-4 ps-0">
-                        <h5 class="fs-6 priceTitleBorder mt-2 text-end">＄9,999起</h5>
-                        <div class="px-4">
-                          <table style="width: 100%;">
-                            <tr><td>草圖提供</td><td class="text-end">2版</td></tr>
-                            <tr><td>可修改</td><td class="text-end">1次</td></tr>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                <!--SCROOL-->
+            </div>
+          </div>
+          <!--SCROOL-->
         </section>
-            <!-- mobile -->
+        <!--webDesign-->
+        <!--businessDesgin-->
+        <section id="businessDesgin" data-bs-spy="scroll" data-bs-target="#scrollMenu" data-bs-offset="0" tabindex="0">
+          <div class="row mt-5">
+            <div class="col-12 p-0 mt-5">
+              <div class="businessD businessD-Mo"></div>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-8">
+                  <div class="ps-4">
+                    <h1 class="my-4 le-space">商業設計</h1>
+                    <p class="text-wrap lh-base mb-3 p-indent le-space">
+                      本工作室提供多樣的設計服務，絕對能滿足您的各種需求，不管是平面化風格或是手繪格，我們都能提供多樣的商業設計服務！
+                    </p>
+                    <p class="text-wrap lh-base p-indent le-space">橫幅廣告、商業海報，可使用在各種推廣情境中，讓您所推廣的事物最為亮眼！</p>
+                  </div>
+                  <a class="mx-4 le-space-price fw-bold">價目表 <img src="assets/img/toPrice.svg" alt=""></a>
+                </div>
+                <div class="col-4 text-center m-auto">
+                  <div class="row">
+                    <div class="col-sm-6 col-12">
+                      <div class="w-idea webProcess"></div>
+                      <span class="textProcess">發案/需求統整</span>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                      <div class="w-fristDraft webProcess"></div>
+                      <span class="textProcess">草稿製作</span>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                      <div class="w-doIt webProcess"></div>
+                      <span class="textProcess">完稿製作</span>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                      <div class="w-maintain webProcess"></div>
+                      <span class="textProcess">交付</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--businessDesgin-->
+        <!-- mobile -->
       </div>
     </div>
     <!-- Script -->
