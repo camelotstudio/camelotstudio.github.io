@@ -56,10 +56,14 @@ a:hover {
   background-size: cover;
 }
 .imgMoblieLayer01{
-  background-image: url('../assets/img/smallpanel-line.svg');
+  background-image: url('../assets/img/BG.svg');
   z-index: -1;
 }
 .imgMoblieLayer02{
+  background-image: url('../assets/img/smallpanel-line.svg');
+  z-index: -1;
+}
+.imgMoblieLayer03{
   background-image: url('../assets/img/upsolarsystem.svg');
   z-index: -1;
 }
@@ -76,7 +80,7 @@ a:hover {
 }
 @media (max-width: 768px){
   [data-theme='dark'] .imgMoblieBG{
-    background-image: url("../assets/img/BG.svg");
+    background-image: url("../assets/img/index-bg.svg");
     z-index: -10;
     }
   [data-theme='light'] .imgMoblieBG{
