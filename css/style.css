@@ -339,6 +339,15 @@ border-bottom-left-radius:5px;
 }
 /* NAVBAR */
 /* webDesign & business */
+.mt-10{
+  margin-top: 6em;
+}
+.vertical-mode{
+  writing-mode: vertical-rl;
+  font-size: 4.5em;
+  font-weight: bold;
+  letter-spacing: .7rem;
+}
 .webD {
   background-image: url("../assets/img/desginWeb.svg");
 }
@@ -382,13 +391,14 @@ border-bottom-left-radius:5px;
 }
 .businessD-Mo{
   min-height: 326px;
-  width: 100%;
+  width: 85%;
   height: 35vh;
   padding:0;
   z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden !important;
+  margin: -45vh auto 0 auto;
 }
 .p-indent{
   text-indent:2em;
@@ -413,14 +423,16 @@ border-bottom-left-radius:5px;
 
 .webProcess{
   margin: 1em auto .5em auto;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   padding:0;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .textProcess{
   font-size: .5em;
+  text-align: center;
+
 }
 [data-theme='light'] .w-idea{
   background-image: url("../assets/img/dark-step/w-idea.svg");
@@ -462,7 +474,7 @@ border-bottom-left-radius:5px;
   background-image: url("../assets/img/light-step/b-idea.svg");
 }
 [data-theme='dark'] .b-fristDraft{
-  background-image: url("../assets/img/light-step/b-firstDraft.svg");
+  background-image: url("../assets/img/light-step/b-fristDraft.svg");
 }
 [data-theme='dark'] .b-doIt{
   background-image: url("../assets/img/light-step/b-doIt.svg");

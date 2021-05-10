@@ -44,22 +44,22 @@
         <!-- .navbar -->
       </div>
       <nav>
-        <div id="navbarCamelot" class="navbar-collapse collapse">
+        <div id="navbarCamelot" class="navbar-collapse collapse show">
           <ul id="main-menu" class="navbar-nav navbar-container">
             <li class="nav-item">
-              <a href="webDesign.html" class="nav-link">網頁設計</a>
+              <a href="#webDesign" class="nav-link">網頁設計</a>
             </li>
             <li class="nav-item">
-              <a href="businessDesgin.html" class="nav-link">商業設計</a>
+              <a href="#businessDesgin" class="nav-link">商業設計</a>
             </li>
             <li class="nav-item">
-              <a href="aboutUs.html" class="nav-link">關於我們</a>
+              <a href="#aboutUs" class="nav-link">關於我們</a>
             </li>
             <li class="nav-item">
-              <a href="works.html" class="nav-link">作品集</a>
+              <a href="#works" class="nav-link">作品集</a>
             </li>
             <li class="nav-item">
-              <a href="sourceShare.html" class="nav-link">技術分享</a>
+              <a href="#sourceShare" class="nav-link">技術分享</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">客戶登入</a>
@@ -98,9 +98,140 @@
           </h5>
         </div>
         <!--desginWeb-->
-        <img src="./assets/img/desginWeb.svg" width="100%" style="position: absolute;margin-top: -35vh;padding: 0;" alt="">
-        <div></div>
+        <img id="webDesign" src="./assets/img/desginWeb.svg" width="100%" style="margin-top: -40vh;padding: 0;" alt="">
+        <section>
+          <div class="row mt-5 p-0">
+            <div class="col-5 vertical-mode">網頁設計</div>
+            <div class="col-6 mt-10">
+              <p>本工作室所提供的服務有別於市面上制式套版的服務，堅持完全客製化設計，力保網站內容能以最適合的方式呈現</p>
+              <p class="fw-bold">不懂技術也沒關係！</p>
+              <p>本工作室提供免費的諮詢服務，在您確定使用我們的服務前，可以先交由我們為您初步規畫網站版面，修改到喜歡再開始動工</p>
+            </div>
+          </div>
+          <div class="mx-4">
+            <div class="col-12 fw-bold fs-1 text-end mt-5 mb-3">流程介紹</div>
+            <div class="row text-center">
+              <div class="col-3">
+                <div class="w-idea webProcess"></div>
+                <span class="textProcess">發案/需求統整</span>
+              </div>
+              <div class="col-3">
+                <div class="w-fristDraft webProcess"></div>
+                <span class="textProcess">初步設計稿</span>
+              </div>
+              <div class="col-3">
+                <div class="w-doIt webProcess"></div>
+                <span class="textProcess">網頁製作</span>
+              </div>
+              <div class="col-3">
+                <div class="w-maintain webProcess"></div>
+                <span class="textProcess">上線/持續維護</span>
+              </div>
+            </div>
+          </div>
+        </section>
         <!--desginWeb-->
+        <!--SCROOL價目表-->
+        <div class="pt-4"></div>
+        <div id="webPrice" data-bs-spy="scroll" data-bs-offset="0" tabindex="0"></div>
+        <div class="pt-4"></div>
+        <div class="d-md-none"> 
+          <div class="priceHeight">
+            <div class="priceImg row"></div>
+            <div  class=" py-4 " style="margin-top:3em;">
+              <h1 class="le-space mx-4 le-space-price fw-bold">價目表</h1>
+              <div class="row my-4">
+                <div class="col-6 py-3 ps-4 pe-0 reverseLr">
+                  <h5 class="priceTitleBorder-r fw-bold mb-3">單頁網站設計</h5>
+                  <p class="">多頁網站設計</p>
+                  <p class="">簡單資料主細表</p>
+                  <p class="">關聯式主細表</p>
+                  <p class="">會員系統</p>
+                </div>
+                <div class="col-6 py-3 pe-4 ps-0">
+                  <h5 class="fs-6 priceTitleBorder mt-2 text-end">＄9,999起</h5>
+                  <div class="px-4">
+                    <table style="width: 100%;">
+                      <tr><td>草圖提供</td><td class="text-end">2版</td></tr>
+                      <tr><td>可修改</td><td class="text-end">1次</td></tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--SCROOL價目表-->
+        <img id="businessDesgin" src="./assets/img/desginBusiness-BG.svg" style="padding:0;margin-top: -25vh;" alt="">
+        <!--businessDesgin-->
+        <section data-bs-spy="scroll" data-bs-target="#scrollMenu" data-bs-offset="0" tabindex="0">
+            <div class="col-12 p-0 mt-5">
+              <div class="businessD businessD-Mo"></div>
+            </div>
+            <div class="row mt-5 p-0">
+              <div class="col-5 vertical-mode">商業設計</div>
+              <div class="col-6 mt-10">
+                <p>本工作室提供多樣的設計服務，絕對能滿足您的各種需求，不管是平面化風格或是手繪風格，我們都能提供多樣的商業設計服務！</p>
+                <p>橫幅廣告、商業海報，可使用在各種推廣情境中，讓您所推廣的事物最為亮眼！</p>
+              </div>
+            </div>
+            <div class="mx-4">
+              <div class="col-12 fw-bold fs-1 text-end mt-5 mb-3">流程介紹</div>
+              <div class="row text-center">
+                <div class="col-3">
+                  <div class="b-idea webProcess"></div>
+                  <span class="textProcess">發案/需求統整</span>
+                </div>
+                <div class="col-3">
+                  <div class="b-fristDraft webProcess"></div>
+                  <span class="textProcess">草稿製作</span>
+                </div>
+                <div class="col-3">
+                  <div class="b-doIt webProcess"></div>
+                  <span class="textProcess">網頁製作</span>
+                </div>
+                <div class="col-3">
+                  <div class="b-done webProcess"></div>
+                  <span class="textProcess">上線/持續維護</span>
+                </div>
+              </div>
+            </div>
+          <!--SCROOL價目表-->
+          <div class="pt-4"></div>
+          <div id="businessPrice" data-bs-spy="scroll" data-bs-offset="0" tabindex="0"></div>
+          <div class="pt-4"></div>
+          <div class="d-md-none"> 
+            <div class="priceHeight">
+              <div class="priceImg row"></div>
+              <div  class=" py-4 " style="margin-top:3em;">
+                <h1 class="le-space mx-4 le-space-price fw-bold">價目表</h1>
+                <div class="row my-4">
+                  <div class="col-6 py-3 ps-4 pe-0 reverseLr">
+                    <h5 class="priceTitleBorder-r fw-bold mb-3">單頁網站設計</h5>
+                    <p class="">多頁網站設計</p>
+                    <p class="">簡單資料主細表</p>
+                    <p class="">關聯式主細表</p>
+                    <p class="">會員系統</p>
+                  </div>
+                  <div class="col-6 py-3 pe-4 ps-0">
+                    <h5 class="fs-6 priceTitleBorder mt-2 text-end">＄9,999起</h5>
+                    <div class="px-4">
+                      <table style="width: 100%;">
+                        <tr><td>草圖提供</td><td class="text-end">2版</td></tr>
+                        <tr><td>可修改</td><td class="text-end">1次</td></tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--SCROOL價目表-->
+        </section>
+        <!--businessDesgin-->
+        <!--aboutUs-->
+        <section id="aboutUs"></section>
+        <!--aboutUs-->
         <!-- mobile -->
         <div class="col-md-6 col-12 p-0 d-none d-md-block m-auto">
           <div class="img-D"></div>
@@ -129,6 +260,12 @@
             document.documentElement.setAttribute('data-theme', targetTheme)
             localStorage.setItem('theme', targetTheme);
         };
+        const navLinks = document.querySelectorAll('.nav-item')
+        const menuToggle = document.getElementById('navbarCamelot')
+        const bsCollapse = new bootstrap.Collapse(menuToggle)
+        navLinks.forEach((l) => {
+            l.addEventListener('click', () => { bsCollapse.toggle() })
+        });
     </script>
   </body>
 </html>
