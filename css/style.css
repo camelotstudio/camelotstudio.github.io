@@ -331,6 +331,12 @@ border-bottom-left-radius:5px;
 .nav-height{
   margin-top: 75px;
 }
+
+.fixed-top.scrolled {
+  backdrop-filter: blur(10px);
+  transition: backdrop-filter 200ms linear;
+}
+
 .backdrop-blur {
   backdrop-filter: blur(10px);
 }
