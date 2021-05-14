@@ -49,6 +49,11 @@ a:hover {
     display: block !important;
     color: var(--text-color);
 }
+.imgMoblieBGCover{
+  height: 150vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .imgMoblieBGSet{
   height: calc(100vh);
   background-position: bottom;
@@ -67,8 +72,10 @@ a:hover {
   background-image: url('../assets/img/upsolarsystem.svg');
   z-index: -1;
 }
-
-@media (min-width: 767px){
+.imgPCBG{
+  
+}
+@media (min-width: 416px){
   [data-theme='dark'] .imgMoblieBG{
     background-image: none;
     height: auto;
@@ -78,7 +85,7 @@ a:hover {
     height: auto;
   }
 }
-@media (max-width: 768px){
+@media (max-width: 415px){
   [data-theme='dark'] .imgMoblieBG{
     background-image: url("../assets/img/index-bg.svg");
     z-index: -10;
@@ -721,3 +728,16 @@ border-bottom-left-radius:5px;
   position: relative;
 }
 /*webPrice*/
+.workImgSet{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 250px;
+}
+.workText{
+  position: absolute;
+  height: 100%; 
+  width: 35%;
+  background-color: rgba(0, 0, 0, 0.5);
+  right: 0;
+}
