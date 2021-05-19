@@ -153,7 +153,7 @@ a:hover {
     z-index: -10;
     }
   [data-theme='light'] .imgMoblieBG{
-    background-image: url("../assets/img/light-bg.svg");
+    background-image: url("../assets/img/index-bg.svg");
     z-index: -10;
   }
 }
@@ -177,6 +177,24 @@ a:hover {
   width: 10rem;
   background-repeat: no-repeat;
 }
+@media (min-width: 416px){
+  .logo{
+  background-size: 4em 100%;
+  }
+  .navbar-brand{
+    padding-top: .5rem !important;
+    padding-bottom: .5rem !important;
+  }
+}
+@media (max-width: 415px){
+/* NAVBAR bootstap style change */
+.navbar-brand{
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+/* NAVBAR bootstap style change */
+}
+
 [data-theme='dark'] .logo{
   background-image: url("../assets/img/dark-logo.svg");
   
@@ -237,12 +255,7 @@ homepagTitle {
     margin:0 3rem 0 3rem;
   }
 }
-/* NAVBAR bootstap style change */
-.navbar-brand{
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-}
-/* NAVBAR bootstap style change */
+
 .navbar-expand-md {
   z-index: 99;
   
@@ -412,9 +425,17 @@ border-bottom-left-radius:5px;
   margin-top: 75px;
 }
 
-.fixed-top.scrolled {
-  backdrop-filter: blur(10px);
-  transition: backdrop-filter 200ms linear;
+
+@media (min-width: 416px){
+  .fixed-top.scrolled {
+    backdrop-filter: none;
+  }
+}
+@media (max-width: 415px){
+  .fixed-top.scrolled {
+    backdrop-filter: blur(10px);
+    transition: backdrop-filter 200ms linear;
+  }
 }
 
 .backdrop-blur {
@@ -813,3 +834,111 @@ border-bottom-left-radius:5px;
   background-color: rgba(0, 0, 0, 0.5);
   right: 0;
 }
+/* pcHOME */
+
+
+
+section.well{
+	overflow: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+.well {
+	position: relative;
+	overflow: hidden;
+	transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+}
+@media (max-width: 416px){
+  .well {display: none;}
+}
+@media (min-width: 415px){
+  .well {display:block;}
+}
+
+.top {
+	font-size: 80%;
+	color: hsla(0, 0%, 100%, .25);
+	position: relative;
+	top: -.2em;
+	cursor: pointer;
+}
+
+.panel {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+	/*font-size: 10vmin;*/
+	box-sizing: border-box;
+	color: hsla(0, 0%, 100%, .1);
+	cursor: default;
+}
+
+.panel:nth-child(1) {
+  background-image: url('../assets/img/homePCImg01.svg');
+  background-repeat: no-repeat;
+  background-size: 100vh auto;
+  background-position: 35vw top;
+  background-attachment: fixed;
+}
+
+.homePCBGts{
+  background-image: url('../assets/img/homePCImg-ts.svg');
+  position: absolute;
+  top: -5px;
+  width: 38vw;
+  height: 47vh;
+  background-size: 38vw 25vw;
+  background-repeat: no-repeat;
+}
+.homePCBGte{
+  background-image: url('../assets/img/homePCImg-te.svg');
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20vw;
+  height: 45vh;
+  background-size: 21vw 22vw;
+  background-repeat: no-repeat;
+}
+.homePCBGbs{
+  background-image: url('../assets/img/homePCImg-bs.svg');
+  position: absolute;
+  bottom: 0;
+  width: 22vw;
+  height: 30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.homePCBGbe{
+  background-image: url('../assets/img/homePCImg-be.svg');
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 265px;
+  max-height: 175px;
+  width: 25vw;
+  height: 15vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.panel:nth-child(2) {
+	background: #123456;
+	padding: 1em;
+}
+
+.panel:nth-child(3) {
+	background: #234567;
+	padding: 1em;
+}
+
+.panel:nth-child(4) {
+	background: #345678;
+	padding: 1em;
+}
+
+.panel:nth-child(5) {
+	background: #456789;
+	padding: 1em;
+}
+/* pcHOME */
