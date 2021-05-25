@@ -1,18 +1,18 @@
-<svg width="644" height="922" viewBox="0 0 644 922" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="607" height="1317" viewBox="0 0 607 1317" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
 <g filter="url(#filter0_d)">
-<path d="M289.578 734H80.4217C63.0432 734 49 717.747 49 697.634V571.367C49 551.254 63.0432 538 80.4217 538H185H289.578C306.957 538 322 531 320 571.367C320 571.367 320 677.52 320 697.634C320 717.747 306.957 734 289.578 734Z" fill="white" stroke="#2064B4" stroke-miterlimit="10"/>
-<path d="M314.843 577H54.1572C50.7751 577 48 573.839 48 569.986V543.014C48 539.161 50.7751 536 54.1572 536H314.843C318.225 536 321 539.161 321 543.014V569.986C321 573.937 318.225 577 314.843 577Z" fill="#2064B4"/>
-<path d="M310.91 576H53.0896C49.7446 576 47 572.993 47 569.328V543.672C47 540.007 49.7446 537 53.0896 537H310.91C314.255 537 317 540.007 317 543.672V569.328C317 573.087 314.255 576 310.91 576Z" fill="url(#paint0_linear)" style="mix-blend-mode:lighten"/>
-<path d="M296.172 547.4L312.304 566.2" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M312.304 547.3L295.47 565.3" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M220.508 556.8H244.18" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M279.426 546.3H265.31V558.4H279.426V546.3Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M273.201 553.3H259.085V565.4H273.201V553.3Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M211.335 680H60.1628C47.6022 680 37.4521 666.995 37.4521 650.901V549.868C37.4521 533.774 47.6022 523.17 60.1628 523.17H135.749H211.335C223.895 523.17 234.768 517.568 233.323 549.868C233.323 549.868 233.323 634.807 233.323 650.901C233.323 666.995 223.895 680 211.335 680Z" fill="white" stroke="#2064B4" stroke-miterlimit="10"/>
+<path d="M229.557 545H41.4431C39.0025 545 37 542.687 37 539.867V520.133C37 517.313 39.0025 515 41.4431 515H229.557C231.997 515 234 517.313 234 520.133V539.867C234 542.759 231.997 545 229.557 545Z" fill="#20B47F"/>
+<path d="M227.579 545H40.4206C37.9924 545 36 542.764 36 540.039V520.961C36 518.236 37.9924 516 40.4206 516H227.579C230.008 516 232 518.236 232 520.961V540.039C232 542.834 230.008 545 227.579 545Z" fill="url(#paint0_linear)" style="mix-blend-mode:lighten"/>
+<path d="M210.058 523L222 537" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M222.001 523L208.731 537" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M153 530.636H170.25" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M197.446 523H186.904V531.751H197.446V523Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M192.797 528.063H182.256V536.814H192.797V528.063Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
 </g>
 </g>
 <defs>
-<filter id="filter0_d" x="43" y="536" width="282" height="206.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d" x="32" y="515" width="206" height="173.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="4"/>
@@ -21,12 +21,12 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
 </filter>
-<linearGradient id="paint0_linear" x1="182" y1="556.735" x2="182" y2="480.614" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear" x1="134" y1="530.675" x2="134" y2="474.072" gradientUnits="userSpaceOnUse">
 <stop stop-color="#3F7CC5"/>
 <stop offset="1" stop-opacity="0"/>
 </linearGradient>
 <clipPath id="clip0">
-<rect width="644" height="922" fill="white"/>
+<rect width="606.45" height="1317" fill="white"/>
 </clipPath>
 </defs>
 </svg>

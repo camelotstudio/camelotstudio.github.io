@@ -1,8 +1,22 @@
+@font-face {
+  font-family: fontStyle;
+  src: url('../assets/font/NotoSansTC-Light.otf');
+}
+
+@font-face {
+  font-family: fontStyle;
+  src: url('../assets/font/NotoSansTC-Bold.otf');
+  font-weight: bold;
+}
+*{
+  font-family: fontStyle;
+}
 :root {
   --background-color: #fff;
   --text-color: #272C35;
   --sec-text-color:#314261;
   --link-color: #647697;
+  
 }
 
 html[data-theme='light'] {
@@ -11,6 +25,8 @@ html[data-theme='light'] {
   --link-color: #647697;
   --opacity-color: rgba(255,255,255,0.3);
   --opacity-color-hover: rgba(255,255,255,0.7);
+  --main-title:#2064B4;
+  --main-border:#2064B4;
 }
 
 html[data-theme='dark'] {
@@ -19,6 +35,8 @@ html[data-theme='dark'] {
   --link-color: #828fff;
   --opacity-color: rgba(0,0,0,0.3);
   --opacity-color-hover: rgba(0,0,0,0.7);
+  --main-title:#155E6B;
+  --main-border:#20B47F;
 }
 
 body {
@@ -53,6 +71,7 @@ a:hover {
   height: 150vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .imgMoblieBGSet{
   height: calc(100vh);
@@ -89,11 +108,11 @@ a:hover {
 }
 @media (max-width: 415px){
   [data-theme='dark'] .imgMoblieLayer01{
-    background-image: url('../assets/img/BG.svg');
+    background-image: url('../assets/img/dark-step/homePageBG02.svg');
     z-index: -1;
     }
   [data-theme='light'] .imgMoblieLayer01{
-    background-image: url('../assets/img/BG.svg');
+    background-image: url('../assets/img/light-step/homePageBG02.svg');
     z-index: -1;
   }
 }
@@ -149,11 +168,11 @@ a:hover {
 }
 @media (max-width: 415px){
   [data-theme='dark'] .imgMoblieBG{
-    background-image: url("../assets/img/index-bg.svg");
+    background-image: url("../assets/img/dark-step/homePageBG.svg");
     z-index: -10;
     }
   [data-theme='light'] .imgMoblieBG{
-    background-image: url("../assets/img/index-bg.svg");
+    background-image: url("../assets/img/light-step/homePageBG.svg");
     z-index: -10;
   }
 }
@@ -203,15 +222,21 @@ a:hover {
   background-image: url("../assets/img/light-logo.svg");
 }
 homepagTitle {
-  font-size: 3.5em;
+  position: relative;
+  left: 13%;
+  color: var(--main-title);
+}
+.mainBoder{
+  color: var(--main-border);
+  font-weight: bolder;
+  font-size: 1.25rem;
 }
 .homeMobileCont{
   position: absolute;
   top:0;
   width: 100%;
-  overflow: hidden;
-  margin-top: 33%;
-  text-align: center;
+  margin-top: 19vh;
+  text-align: left;
 }
 
 /* NAVBAR */
@@ -503,14 +528,14 @@ border-bottom-left-radius:5px;
   background-image: url("../assets/img/desginBusiness.svg");
 }
 .businessD-Mo{
-  min-height: 326px;
+  min-height: 343px;
   height: 35vh;
   padding:0;
   z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden !important;
-  margin: -45vh auto 0 auto;
+  margin: -70vh auto 0 auto;
 }
 .p-indent{
   text-indent:2em;
@@ -522,6 +547,7 @@ border-bottom-left-radius:5px;
   letter-spacing: .5em;
   text-decoration: none;
   color: var(--text-color);
+  font-size: 3rem;
 }
 .le-space-price:hover {
   text-decoration: none;
@@ -593,6 +619,47 @@ border-bottom-left-radius:5px;
 }
 [data-theme='dark'] .b-done{
   background-image: url("../assets/img/light-step/b-done.svg");
+}
+.toBusinessDesgin{
+  padding:0;margin-top: 4vh;
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+}
+[data-theme='dark'] .toBusinessDesgin{
+  background-image: url('../assets/img/dark-step/toBusiness.svg');
+}
+[data-theme='light'] .toBusinessDesgin{
+  background-image: url('../assets/img/light-step/toBusiness.svg');
+}
+[data-theme='dark'] .processBG{
+  background-image: url('../assets/img/dark-step/processBG.svg');
+}
+[data-theme='light'] .processBG{
+  background-image: url('../assets/img/light-step/processBG.svg');
+}
+[data-theme='dark'] .webDesignBG{
+  background-image: url('../assets/img/dark-step/webD-BG.svg');
+}
+[data-theme='light'] .webDesignBG{
+  background-image: url('../assets/img/light-step/webD-BG.svg');
+}
+.processBG{
+  background-size: cover;
+  height: 65vh;
+  width: 100%;
+  margin-left: -0.75rem;
+  margin-top: -21vh;
+  position: absolute;
+  z-index: -99;
+}
+.webDesignBG{
+  background-size: cover;
+  height: 53vh;
+  margin-top: -42vh;
+  position: absolute;
+  background-position: -55%;
+  background-repeat: no-repeat;
 }
 /* webDesign & business */
 /* aboutUS */
@@ -800,6 +867,7 @@ border-bottom-left-radius:5px;
 }
 .reverseLr{
   border-radius: 0 20px 20px 0;
+  padding:1rem 0 1rem 2rem;
   background-color: var(--text-color);
   color: var(--background-color);
 }

@@ -22,12 +22,13 @@
   <body>
 
     <header class="imgMoblieBG imgMoblieBGCover">
+      <!--
       <div class="d-md-none imgMoblieLayer01 imgMoblieBGSet">
         <div class="d-md-none imgMoblieLayer02 imgMoblieBGSet">
           <div class="d-md-none imgMoblieLayer03 imgMoblieBGSet"></div>
         </div>
       </div>
-
+      -->
       <div class="navbar-wrapper">
         <div class="navbar fixed-top py-0">
           <!-- .container -->
@@ -107,34 +108,35 @@
     <div class="container-fluid moDisplay">
       <div class="row">
         <!-- mobile -->
-        <div class=" homeMobileCont">
-          <homepagTitle>CAMELOT</homepagTitle>
-          <h1 class="text-start mx-5">studio MO</h1>
-          <h5>
-            邁開網路世界的第一步!
-          </h5>
+        <div class="homeMobileCont fw-bold">
+          <homepagTitle style="font-size: 3.5rem;">CAMELOT</homepagTitle>
+          <homepagTitle style="font-size: 3rem;">STUDIO</homepagTitle>
+
         </div>
         <!--desginWeb-->
-        <img id="webDesign" class="" src="./assets/img/desginWeb.svg" width="100%" style="margin-top: -40vh;padding: 0;" alt="">
-        <section class="">
+        <div class="webDesignBG">
+          <div id="webDesign" style="margin-top: -4.5em;"></div>
+        </div>
+        <section data-bs-spy="scroll" data-bs-target="#scrollMenu" data-bs-offset="0" tabindex="0">
           <div class="row mt-5 p-0">
             <div class="col-5 vertical-mode">網頁設計</div>
-            <div class="col-6 mt-10">
+            <div class="col-6 mt-10" style="letter-spacing: 0.1rem;">
               <p>本工作室所提供的服務有別於市面上制式套版的服務，堅持完全客製化設計，力保網站內容能以最適合的方式呈現</p>
-              <p class="fw-bold">不懂技術也沒關係！</p>
+              <p class="mainBoder">不懂技術也沒關係！</p>
               <p>本工作室提供免費的諮詢服務，在您確定使用我們的服務前，可以先交由我們為您初步規畫網站版面，修改到喜歡再開始動工</p>
             </div>
           </div>
+          <div class="processBG"></div>
           <div class="mx-4">
             <div class="col-12 fw-bold fs-1 text-end mt-5 mb-3">流程介紹</div>
             <div class="row text-center">
               <div class="col-3">
                 <div class="w-idea webProcess"></div>
-                <span class="textProcess">發案/需求統整</span>
+                <span class="textProcess">發案/需求</span>
               </div>
               <div class="col-3">
                 <div class="w-fristDraft webProcess"></div>
-                <span class="textProcess">初步設計稿</span>
+                <span class="textProcess">初步設計</span>
               </div>
               <div class="col-3">
                 <div class="w-doIt webProcess"></div>
@@ -142,7 +144,7 @@
               </div>
               <div class="col-3">
                 <div class="w-maintain webProcess"></div>
-                <span class="textProcess">上線/持續維護</span>
+                <span class="textProcess">上線/維護</span>
               </div>
             </div>
           </div>
@@ -156,9 +158,9 @@
           <div class="priceHeight">
             <div class="priceImg row"></div>
             <div  class=" py-4 " style="margin-top:3em;">
-              <h1 class="le-space mx-4 le-space-price fw-bold">價目表</h1>
+              <h1 class="mx-4 le-space-price fw-bold">價目表</h1>
               <div class="row my-4">
-                <div class="col-6 py-3 ps-4 pe-0 reverseLr">
+                <div class="col-6 reverseLr">
                   <h5 class="priceTitleBorder-r fw-bold mb-3">單頁網站設計</h5>
                   <p class="">多頁網站設計</p>
                   <p class="">簡單資料主細表</p>
@@ -179,15 +181,15 @@
           </div>
         </div>
         <!--SCROOL價目表-->
-        <img class="" id="businessDesgin" src="./assets/img/desginBusiness-BG.svg" style="padding:0;margin-top: -25vh;" alt="">
+        <div id="businessDesgin" class="toBusinessDesgin"></div>
         <!--businessDesgin-->
-        <section class="" data-bs-spy="scroll" data-bs-target="#scrollMenu" data-bs-offset="0" tabindex="0">
+        <section data-bs-spy="scroll" data-bs-target="#scrollMenu" data-bs-offset="0" tabindex="0">
             <div class="col-12 p-0 mt-5">
               <div class="businessD businessD-Mo"></div>
             </div>
-            <div class="row mt-5 p-0">
+            <div class="row p-0" style="margin-top: 5rem;">
               <div class="col-5 vertical-mode">商業設計</div>
-              <div class="col-6 mt-10">
+              <div class="col-6 mt-10" style="letter-spacing: 0.1rem;">
                 <p>本工作室提供多樣的設計服務，絕對能滿足您的各種需求，不管是平面化風格或是手繪風格，我們都能提供多樣的商業設計服務！</p>
                 <p>橫幅廣告、商業海報，可使用在各種推廣情境中，讓您所推廣的事物最為亮眼！</p>
               </div>
@@ -221,7 +223,7 @@
             <div class="priceHeight">
               <div class="priceImg row"></div>
               <div  class=" py-4 " style="margin-top:3em;">
-                <h1 class="le-space mx-4 le-space-price fw-bold">價目表</h1>
+                <h1 class="mx-4 le-space-price fw-bold">價目表</h1>
                 <div class="row my-4">
                   <div class="col-6 py-3 ps-4 pe-0 reverseLr">
                     <h5 class="priceTitleBorder-r fw-bold mb-3">單頁網站設計</h5>
