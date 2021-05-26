@@ -534,19 +534,7 @@ border-bottom-left-radius:5px;
   width: 35vw;
   right: 0;
 }
-.businessD {
-  background-image: url("../assets/img/desginBusiness.svg");
-}
-.businessD-Mo{
-  min-height: 343px;
-  height: 35vh;
-  padding:0;
-  z-index: -1;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden !important;
-  margin: -70vh auto 0 auto;
-}
+
 .p-indent{
   text-indent:2em;
 }
@@ -598,7 +586,7 @@ border-bottom-left-radius:5px;
   background-image: url("../assets/img/dark-step/b-idea.svg");
 }
 [data-theme='light'] .b-fristDraft{
-  background-image: url("../assets/img/dark-step/b-firstDraft.svg");
+  background-image: url("../assets/img/dark-step/b-fristDraft.svg");
 }
 [data-theme='light'] .b-doIt{
   background-image: url("../assets/img/dark-step/b-doIt.svg");
@@ -654,6 +642,12 @@ border-bottom-left-radius:5px;
 [data-theme='light'] .webDesignBG{
   background-image: url('../assets/img/light-step/webD-BG.svg');
 }
+[data-theme='dark'] .businessDesignBG{
+  background-image: url('../assets/img/dark-step/BusinessD-BG.svg');
+}
+[data-theme='light'] .businessDesignBG{
+  background-image: url('../assets/img/light-step/BusinessD-BG.svg');
+}
 .processBG{
   background-size: cover;
   height: 65vh;
@@ -669,6 +663,16 @@ border-bottom-left-radius:5px;
   margin-top: -46vh;
   position: absolute;
   background-repeat: no-repeat;
+}
+.businessDesignBG{
+  min-height: 382px;
+  height: 35vh;
+  padding: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden !important;
+  margin: -70vh auto 0 auto;
 }
 /* webDesign & business */
 /* aboutUS */
