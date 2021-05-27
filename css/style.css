@@ -107,6 +107,18 @@ a:active
    display: block;
   }
 }
+
+@media (min-width: 416px){
+  .moHidden{
+     display: block !important;
+   }
+ }
+ @media (max-width: 415px){
+   .moHidden{
+    display: none !important;
+   }
+ }
+
 @media (min-width: 416px){
   [data-theme='dark'] .imgMoblieLayer01{
     background-image: none;
