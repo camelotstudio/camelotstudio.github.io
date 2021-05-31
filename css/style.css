@@ -819,7 +819,7 @@ border-bottom-left-radius:5px;
   bottom: 0;
   width: 25px;
   height: 100%;
-  background: #155E6B;
+  background: var(--main-title);
   -webkit-clip-path: polygon(-100% -100%, 0% 100%, 100% 0);
   clip-path: polygon(-100% -100%, 0% 100%, 100% 0);
 }
@@ -829,7 +829,7 @@ border-bottom-left-radius:5px;
   bottom: 0;
   left: 25px;
   height: 100%;
-  background: #155E6B;
+  background: var(--main-title);
   -webkit-clip-path: polygon(100% 0,  0 100%, 100% 100%);
   clip-path: polygon(100% 0,  0 100%, 100% 100%);
 }
@@ -857,7 +857,7 @@ border-bottom-left-radius:5px;
   opacity: 1;
 }
 .shareBtn{
-  background: #155E6B;
+  background: var(--main-title);
   color: #F7F8F8;
   border: 1px solid grey;
   height: auto;
@@ -951,14 +951,8 @@ border-bottom-left-radius:5px;
 
 
 
-section.well{
-	overflow: hidden;
-  text-rendering: optimizeLegibility;
-}
-
 .well {
 	position: relative;
-	overflow: hidden;
 	transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
 }
 @media (max-width: 416px){
@@ -986,25 +980,53 @@ section.well{
 	cursor: default;
 }
 
+[data-theme='dark'] .panel:nth-child(1) {
+  background-image: url('../assets/img/dark-step/homePageBG-PC.svg');
+}
+[data-theme='light'] .panel:nth-child(1) {
+  background-image: url('../assets/img/light-step/homePageBG-PC.svg');
+}
+
+
 .panel:nth-child(1) {
-  background-image: url('../assets/img/homePCImg01.svg');
   background-repeat: no-repeat;
   background-size: 100vh auto;
   background-position: 35vw top;
   background-attachment: fixed;
 }
-
+[data-theme='light'] .homePCBGts{
+  background-image: url('../assets/img/light-step/homePCImg-ts.svg');
+}
+[data-theme='dark']  .homePCBGts{
+  background-image: url('../assets/img/dark-step/homePCImg-ts.svg');
+}
+[data-theme='light'] .homePCBGte{
+  background-image: url('../assets/img/light-step/homePCImg-te.svg');
+}
+[data-theme='dark'] .homePCBGte{
+  background-image: url('../assets/img/dark-step/homePCImg-te.svg');
+}
+[data-theme='light'] .homePCBGbs{
+  background-image: url('../assets/img/light-step/homePCImg-bs.svg');
+}
+[data-theme='dark'] .homePCBGbs{
+  background-image: url('../assets/img/dark-step/homePCImg-bs.svg');
+}
+[data-theme='light'] .homePCBGbe{
+  background-image: url('../assets/img/light-step/homePCImg-be.svg');
+}
+[data-theme='dark'] .homePCBGbe{
+  background-image: url('../assets/img/dark-step/homePCImg-be.svg');
+}
 .homePCBGts{
-  background-image: url('../assets/img/homePCImg-ts.svg');
   position: absolute;
-  top: -5px;
+  top: -11px;
   width: 38vw;
   height: 47vh;
   background-size: 38vw 25vw;
   background-repeat: no-repeat;
 }
 .homePCBGte{
-  background-image: url('../assets/img/homePCImg-te.svg');
   position: absolute;
   top: 0;
   right: 0;
@@ -1014,44 +1036,101 @@ section.well{
   background-repeat: no-repeat;
 }
 .homePCBGbs{
-  background-image: url('../assets/img/homePCImg-bs.svg');
   position: absolute;
   bottom: 0;
-  width: 22vw;
-  height: 30vh;
-  background-size: cover;
+  min-width: 257px;
+  min-height: 192px;
+  width: 30vw;
+  height: 40vh;
+  background-size:cover;
   background-repeat: no-repeat;
 }
 .homePCBGbe{
-  background-image: url('../assets/img/homePCImg-be.svg');
   position: absolute;
   bottom: 0;
   right: 0;
-  max-width: 265px;
-  max-height: 175px;
+  min-width: 265px;
+  min-height: 175px;
   width: 25vw;
   height: 15vw;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+@media all and (max-width: 1700px){
+.homePCBGbs{
+  display: none;
+}
+.homePCBGte{
+  display: none;
+}
+}
 .panel:nth-child(2) {
-	background: #123456;
-	padding: 1em;
+	padding: 5em;
+}
+.secBorder{
+	border-bottom: 1px solid var(--text-color);
+  border-radius:5px;
+  margin: 5em;
+  width: 70%;
+  height: 80%;
+  position: relative;
+}
+.secBorderLeft{
+	border-left: 1px solid var(--text-color);
+  border-radius:5px;
+  position: absolute;
+  top:2.3rem;
+  bottom: 0;
+}
+.secBorderRight{
+	border-right: 1px solid var(--text-color);
+  border-radius:5px;
+  position: absolute;
+  top:2.3rem;
+  right: 0;
+  bottom: 0;
+}
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  color: var(--text-color);
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  border-top: 1px solid var(--text-color);
+}
+
+.separator:not(:empty)::before {
+  flex: 1;
+  margin-right: .75em;
+}
+
+.separator:not(:empty)::after {
+  flex: 13;
+  margin-left: .75em;
 }
 
 .panel:nth-child(3) {
 	background: #234567;
-	padding: 1em;
+	padding: 5em;
 }
 
 .panel:nth-child(4) {
 	background: #345678;
-	padding: 1em;
+	padding: 5em;
 }
 
 .panel:nth-child(5) {
 	background: #456789;
-	padding: 1em;
+	padding: 5em;
+}
+.panel:nth-child(6) {
+	background: #123456;
+	padding: 5em;
 }
 /* pcHOME */
