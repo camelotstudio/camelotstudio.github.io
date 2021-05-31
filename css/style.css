@@ -63,7 +63,9 @@ a:active
 {
   color: var(--link-color);
 }
-
+.main-title{
+  background-color:var(--main-title);
+}
 [data-theme='dark'] .form-control {
   background-color: rgba(0, 0, 0, 0.6);
   border-color: rgba(0, 0, 0, 0.6);
@@ -110,7 +112,7 @@ a:active
 
 @media (min-width: 416px){
   .moHidden{
-     display: block !important;
+     display: grid !important;
    }
  }
  @media (max-width: 415px){

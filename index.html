@@ -268,7 +268,7 @@
         <!--works-->
         <section id="works" class=" px-0">
           <div class="col-12 mode-ab ps-4" style="margin-top: 6rem;margin-bottom: -1rem;">作品集</div>
-          <a href="">
+          <a data-bs-toggle="modal" data-bs-target="#workModal">
             <div class="workImgSet w-100 mb-3" style="background-image: url('./assets/img/mebNew.svg');">
               <div class="workText p-2 text-white">
                 <div class="display-2 fw-bold" style="height:90%;writing-mode: vertical-lr;letter-spacing: .2em;margin: 0 0.75rem;">超多鳥蛋鳥蛋</div>
@@ -276,7 +276,7 @@
               </div>
             </div>
           </a>
-          <a href="">
+          <a data-bs-toggle="modal" data-bs-target="#workModal">
             <div class="workImgSet w-100 mb-3" style="background-image: url('./assets/img/mebNew.svg');">
             <div class="workText p-2 text-white">
               <div class="display-2 fw-bold" style="height:90%;writing-mode: vertical-lr;letter-spacing: .2em;margin: 0 0.75rem;">超多鳥蛋鳥蛋</div>
@@ -284,7 +284,7 @@
             </div>
           </div>
           </a>
-          <a href="">
+          <a data-bs-toggle="modal" data-bs-target="#workModal">
             <div class="workImgSet w-100 mb-3" style="background-image: url('./assets/img/mebNew.svg');">
             <div class="workText p-2 text-white">
               <div class="display-2 fw-bold" style="height:90%;writing-mode: vertical-lr;letter-spacing: .2em;margin: 0 0.75rem;">超多鳥蛋鳥蛋</div>
@@ -295,6 +295,26 @@
           <a href="./works.html" class="display-6 fw-bold float-end px-4 text-decoration-none">更多作品 ＞</a>
         </section>
         <!--works-->
+        <!--worksModal-->
+        <div class="modal fade p-0" id="workModal">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-dark" >
+                <div class="mb-2 text-center">
+                  <img class="w-a" style="max-height:60vh;" src="https://unsplash.it/400/600?image=49" alt="">
+                </div>
+                <p>分類→123類(全部/網站設計/商業設計)</p>
+                <p>完成日期：</p>
+                <p>專案名稱：</p>
+                <p>業主：</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--worksModal-->
         <!--soureShare-->
         <section id="sourceShare" class=" px-0">
           <div class="col-12 mode-ab pe-3 text-end" style="margin-top: 6rem;margin-bottom: -1rem;">資源分享</div>
@@ -322,9 +342,29 @@
             </div>
           </div>
           </a>          
-          <a class="display-6 fw-bold float-end px-4 text-decoration-none">更多作品 ＞</a>
+          <a href="sourceShare.html" class="display-6 fw-bold float-end px-4 text-decoration-none">更多作品 ＞</a>
         </section>
         <!--soureShare-->
+        <!--soureShareModal-->
+        <div class="modal fade p-0" id="workModal">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-dark" >
+                <div class="mb-2 text-center">
+                  <img class="w-a" style="max-height:30vh;" src="https://unsplash.it/400/600?image=49" alt="">
+                </div>
+                <p>分類→123類(全部/網站設計/商業設計)</p>
+                <p>完成日期：</p>
+                <p>專案名稱：</p>
+                <p>業主：</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--soureShareModal-->
         <div class="mb-2 text-center" style="margin-top: 5rem;">
           <div class="row">
             <div class="col-12">© 2019-2021 Camelot Studio.</div>
