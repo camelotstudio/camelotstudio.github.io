@@ -1,0 +1,32 @@
+<svg width="956" height="922" viewBox="0 0 956 922" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<g filter="url(#filter0_d)">
+<path d="M238.335 679H87.1628C74.6022 679 64.4521 665.995 64.4521 649.901V548.868C64.4521 532.774 74.6022 522.169 87.1628 522.169H162.749H238.335C250.895 522.169 261.768 516.568 260.323 548.868C260.323 548.868 260.323 633.807 260.323 649.901C260.323 665.995 250.895 679 238.335 679Z" fill="white" stroke="#549BEF" stroke-miterlimit="10"/>
+<path d="M256.557 544H68.4431C66.0025 544 64 541.687 64 538.867V519.133C64 516.313 66.0025 514 68.4431 514H256.557C258.997 514 261 516.313 261 519.133V538.867C261 541.759 258.997 544 256.557 544Z" fill="#20B47F"/>
+<path d="M254.579 544H67.4206C64.9924 544 63 541.764 63 539.039V519.961C63 517.236 64.9924 515 67.4206 515H254.579C257.008 515 259 517.236 259 519.961V539.039C259 541.834 257.008 544 254.579 544Z" fill="url(#paint0_linear)" style="mix-blend-mode:lighten"/>
+<path d="M237.058 522L249 536" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M249.001 522L235.731 536" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M180 529.637H197.25" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M224.446 522H213.904V530.751H224.446V522Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M219.797 527.062H209.256V535.814H219.797V527.062Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" x="59" y="514" width="206" height="173.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear" x1="161" y1="529.675" x2="161" y2="473.072" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3F7CC5"/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0">
+<rect width="956" height="922" fill="white"/>
+</clipPath>
+</defs>
+</svg>

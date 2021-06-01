@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="一家位於高雄的設計工作室，服務包括網站設計、應用程式設計、企業識別系統、商業設計、學術演講直播與影片後製。">
+    <meta name="keywords" content="卡美洛工作室,網站設計,網頁設計,應用程式設計,App設計,客製化設計,SEO,搜尋引擎最佳化,商業設計,海報設計,企業識別系統設計,企業識別,CI,CIS,吉祥物設計,活動網站設計,直播,演講直播,客製化直播,影片後製">
+    <title>Camelot Studio – 卡美洛工作室</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177302072-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-177302072-1');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <body>
+
+    <header class="imgMoblieBG imgMoblieBGCover">
+      <div class="navbar-wrapper">
+        <div class="navbar fixed-top py-0">
+          <!-- .container -->
+          <div class="container">
+            <a href="index.html" class="navbar-brand"><div class="logo"></div></a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCamelot" aria-controls="navbarCamelot" aria-expanded="false" aria-label="Toggle navigation">
+              <div id="nav-icon">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </button>
+          </div>
+          <!-- .container -->
+        </div>
+        <!-- .navbar -->
+      </div>
+      <nav>
+        <div id="navbarCamelot" class="navbar-collapse collapse show">
+          <ul id="main-menu" class="navbar-nav navbar-container">
+            <li class="nav-item">
+              <a href="#webDesign" class="nav-link">網頁設計</a>
+            </li>
+            <li class="nav-item">
+              <a href="#businessDesgin" class="nav-link">商業設計</a>
+            </li>
+            <li class="nav-item">
+              <a href="#aboutUs" class="nav-link">關於我們</a>
+            </li>
+            <li class="nav-item">
+              <a href="#works" class="nav-link">作品集</a>
+            </li>
+            <li class="nav-item">
+              <a href="#sourceShare" class="nav-link">技術分享</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">客戶登入</a>
+            </li>
+            <li class="nav-item">
+              <div class="nav-link text-end">
+                <p>切換閱讀模式</p>
+                <button id="theme-toggle" class="btn btn-link btn-sm ml-2" type="button"> 
+                  <span class="d-block-light d-none">MOON</span>
+                  <span class="d-block-dark d-none">SUN</span> 
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- .nav -->
+    </header>
+    <!-- PC -->
+    <div class="well" id="well">
+        <div class="panel">one</div>
+        <div class="panel">two <span class="top">&uarr;</span></div>
+        <div class="panel">three <span class="top">&uarr;</span></div>
+        <div class="panel">four <span class="top">&uarr;</span></div>
+        <div class="panel">five <span class="top">&uarr;</span></div>
+    </div>
+    <!-- Script -->
+    <!-- PC fullsrceen scroll -->
+    <script>
+     (function() {
+	"use strict";
+	/*[pan and well CSS scrolls]*/
+	var pnls = document.querySelectorAll('.panel').length,
+		scdir, hold = false;
+
+	function _scrollY(obj) {
+		var slength, plength, pan, step = 90,
+			vh = window.innerHeight / 100,
+			vmin = Math.min(window.innerHeight, window.innerWidth) / 100;
+		if ((this !== undefined && this.id === 'well') || (obj !== undefined && obj.id === 'well')) {
+			pan = this || obj;
+			plength = parseInt(pan.offsetHeight / vh);
+		}
+		if (pan === undefined) {
+			return;
+		}
+		plength = plength || parseInt(pan.offsetHeight / vmin);
+		slength = parseInt(pan.style.transform.replace('translateY(', ''));
+		if (scdir === 'up' && Math.abs(slength) < (plength - plength / pnls)) {
+			slength = slength - step;
+		} else if (scdir === 'down' && slength < 0) {
+			slength = slength + step;
+		} else if (scdir === 'top') {
+			slength = 0;
+		}
+		if (hold === false) {
+			hold = true;
+			pan.style.transform = 'translateY(' + slength + 'vh)';
+			setTimeout(function() {
+				hold = false;
+			}, 1000);
+		}
+		console.log(scdir + ':' + slength + ':' + plength + ':' + (plength - plength / pnls));
+	}
+	/*[swipe detection on touchscreen devices]*/
+	function _swipe(obj) {
+		var swdir,
+			sX,
+			sY,
+			dX,
+			dY,
+			threshold = 100,
+			/*[min distance traveled to be considered swipe]*/
+			slack = 50,
+			/*[max distance allowed at the same time in perpendicular direction]*/
+			alT = 90,
+			/*[max time allowed to travel that distance]*/
+			elT, /*[elapsed time]*/
+			stT; /*[start time]*/
+		obj.addEventListener('touchstart', function(e) {
+			var tchs = e.changedTouches[0];
+			swdir = 'none';
+			sX = tchs.pageX;
+			sY = tchs.pageY;
+			stT = new Date().getTime();
+			//e.preventDefault();
+		}, false);
+
+		obj.addEventListener('touchmove', function(e) {
+			e.preventDefault(); /*[prevent scrolling when inside DIV]*/
+		}, false);
+
+		obj.addEventListener('touchend', function(e) {
+			var tchs = e.changedTouches[0];
+			dX = tchs.pageX - sX;
+			dY = tchs.pageY - sY;
+			elT = new Date().getTime() - stT;
+			if (elT <= alT) {
+				if (Math.abs(dX) >= threshold && Math.abs(dY) <= slack) {
+					swdir = (dX < 0) ? 'left' : 'right';
+				} else if (Math.abs(dY) >= threshold && Math.abs(dX) <= slack) {
+					swdir = (dY < 0) ? 'up' : 'down';
+				}
+				if (obj.id === 'well') {
+					if (swdir === 'up') {
+						scdir = swdir;
+						_scrollY(obj);
+					} else if (swdir === 'down' && obj.style.transform !== 'translateY(0)') {
+						scdir = swdir;
+						_scrollY(obj);
+
+					}
+					e.stopPropagation();
+				}
+			}
+		}, false);
+	}
+	/*[assignments]*/
+	var well = document.getElementById('well');
+	well.style.transform = 'translateY(0)';
+	well.addEventListener('wheel', function(e) {
+		if (e.deltaY < 0) {
+			scdir = 'down';
+		}
+		if (e.deltaY > 0) {
+			scdir = 'up';
+		}
+		e.stopPropagation();
+	});
+	well.addEventListener('wheel', _scrollY);
+	_swipe(well);
+	var tops = document.querySelectorAll('.top');
+	for (var i = 0; i < tops.length; i++) {
+		tops[i].addEventListener('click', function() {
+			scdir = 'top';
+			_scrollY(well);
+		});
+	}
+})();
+    </script>
+    <!-- PC fullsrceen scroll -->
+    <script src="vendor/jquery-3.6.0.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        var toggle = document.getElementById("theme-toggle");
+
+        var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        if (storedTheme)
+            document.documentElement.setAttribute('data-theme', storedTheme)
+
+
+        toggle.onclick = function() {
+            var currentTheme = document.documentElement.getAttribute("data-theme");
+            var targetTheme = "light";
+        
+            if (currentTheme === "light") {
+                targetTheme = "dark";
+            }
+          
+            document.documentElement.setAttribute('data-theme', targetTheme)
+            localStorage.setItem('theme', targetTheme);
+        };
+       
+    </script>
+    <!-- menuToggle -->
+    <script>
+      const navLinks = document.querySelectorAll('.nav-item')
+      const menuToggle = document.getElementById('navbarCamelot')
+      const bsCollapse = new bootstrap.Collapse(menuToggle)
+      navLinks.forEach((l) => {
+        l.addEventListener('click', () => { bsCollapse.toggle() })
+      });
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".fixed-top");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+    <!-- menuToggle -->
+  </body>
+</html>
