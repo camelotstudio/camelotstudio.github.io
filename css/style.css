@@ -254,22 +254,52 @@ a:active
   padding-bottom: 1rem !important;
 }
 /* NAVBAR bootstap style change */
+}
 
 /* PC NAVBAR */
+.pcNavbar{
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 4.5em);
+  width: 18vw;
+}
+@media (max-width: 416px){
+  .pcNavDisplay {display: none;}
+}
+@media (min-width: 415px){
+  .pcNavDisplay {display:flex;}
+}
 .fixed-right{
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1030;
+position: fixed;
+bottom: 0;
+right: 0;
+z-index: 8;
 }
-.nav-border{
-  width: 3px;
-  height: 3rem;
-  background-color: var(--text-color);
+.pcNav-border{
+height: 2.5rem;
+margin-bottom: 1.5rem;
+border-left: 3px solid var(--text-color);
+opacity: 0.5;
+padding-left: 1rem;
 }
-/* PC NAVBAR */
+.pcNav-border:hover{
+  opacity: 1;
+  cursor: pointer;
+}
 
+.pcNav-item{
+  display: none;
+  font-size: 1.5rem;
+  color: var(--text-color);
 }
+.pcNav-border:hover .pcNav-item{
+  display: block;
+}
+
+
+/* PC NAVBAR */
 
 [data-theme='dark'] .logo{
   background-image: url("../assets/img/dark-logo.svg");
