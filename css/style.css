@@ -115,16 +115,6 @@ a:active
 .fs-HomeTitle{
   font-size: 6rem;
 }
-@media (min-width: 416px){
- .moDisplay{
-    display: none;
-  }
-}
-@media (max-width: 415px){
-  .moDisplay{
-   display: block;
-  }
-}
 
 @media (min-width: 416px){
   .moHidden{
@@ -137,17 +127,6 @@ a:active
    }
  }
 
-@media (min-width: 416px){
-  [data-theme='dark'] .imgMoblieLayer01{
-    background-image: none;
-    height: auto;
-    }
-  [data-theme='light'] .imgMoblieLayer01{
-    background-image: none;
-    height: auto;
-  }
-}
-@media (max-width: 415px){
   [data-theme='dark'] .imgMoblieLayer01{
     background-image: url('../assets/img/dark-step/homePageBG02.svg');
     z-index: -1;
@@ -156,18 +135,7 @@ a:active
     background-image: url('../assets/img/light-step/homePageBG02.svg');
     z-index: -1;
   }
-}
-@media (min-width: 416px){
-  [data-theme='dark'] .imgMoblieLayer02{
-    background-image: none;
-    height: auto;
-    }
-  [data-theme='light'] .imgMoblieLayer02{
-    background-image: none;
-    height: auto;
-  }
-}
-@media (max-width: 415px){
+
   [data-theme='dark'] .imgMoblieLayer02{
     background-image: url('../assets/img/smallpanel-line.svg');
     z-index: -1;
@@ -176,18 +144,8 @@ a:active
     background-image: url('../assets/img/smallpanel-line.svg');
     z-index: -1;
   }
-}
-@media (min-width: 416px){
-  [data-theme='dark'] .imgMoblieLayer03{
-    background-image: none;
-    height: auto;
-    }
-  [data-theme='light'] .imgMoblieLayer03{
-    background-image: none;
-    height: auto;
-  }
-}
-@media (max-width: 415px){
+
+
   [data-theme='dark'] .imgMoblieLayer03{
     background-image: url('../assets/img/upsolarsystem.svg');
     z-index: -1;
@@ -196,18 +154,8 @@ a:active
     background-image: url('../assets/img/upsolarsystem.svg');
     z-index: -1;
   }
-}
-@media (min-width: 416px){
-  [data-theme='dark'] .imgMoblieBG{
-    background-image: none;
-    height: auto;
-    }
-  [data-theme='light'] .imgMoblieBG{
-    background-image: none;
-    height: auto;
-  }
-}
-@media (max-width: 415px){
+
+
   [data-theme='dark'] .imgMoblieBG{
     background-image: url("../assets/img/dark-step/homePageBG.svg");
     z-index: -10;
@@ -216,7 +164,6 @@ a:active
     background-image: url("../assets/img/light-step/homePageBG.svg");
     z-index: -10;
   }
-}
 
 .img-D{
   height: calc(100vh - 4.5rem);
@@ -731,18 +678,35 @@ border-bottom-left-radius:5px;
 .webDesignBG-PC{
   position: absolute;
   background-size: cover;
-  height: 100%;
+  height: 101%;
   width: 49%;
   background-repeat: no-repeat;
   bottom:-7em;
 }
+.ls-price-pc{
+  letter-spacing: 0.5rem;
+}
 .webDesignBG-Mo{
   background-size: cover;
-  height:61%;
+  height:58vh;
+  width: 100vw;
   margin-top: -46vh;
   position: absolute;
   background-repeat: no-repeat;
 }
+@media (min-width: 416px){
+ .webDesignBG-Mo{
+    width: 70vw;
+    margin:-46vh 0 0 20vw;
+    }
+}
+@media (min-width: 1000px){
+  .mt-10{
+    margin-top:10em
+    }
+ }
+
+
 .businessDesignBG-Mo{
   min-height: 382px;
   height: 35vh;
@@ -1018,6 +982,7 @@ border-bottom-left-radius:5px;
 
 .well {
 	position: relative;
+	overflow: hidden;
 	transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
 }
 @media (max-width: 416px){
