@@ -120,6 +120,7 @@ a:active
   .moHidden{
      display: grid !important;
    }
+  
  }
  @media (max-width: 415px){
    .moHidden{
@@ -700,9 +701,22 @@ border-bottom-left-radius:5px;
     margin:-46vh 0 0 20vw;
     }
 }
+@media (min-width: 700px){
+  .homeMobileCont{
+    text-align: center !important;
+    left: -13vw;
+  }
+}
 @media (min-width: 1000px){
   .mt-10{
     margin-top:10em
+    }
+    .tableLimit{
+      max-width: 600px;
+      margin: 0 auto !important;
+    }
+    .processBG-Mo{
+      height: 80vh !important;
     }
  }
 
