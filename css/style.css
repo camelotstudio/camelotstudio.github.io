@@ -472,12 +472,12 @@ border-bottom-left-radius:5px;
 }
 
 
-@media (min-width: 416px){
+@media (min-width: 1050px){
   .fixed-top.scrolled {
     backdrop-filter: none;
   }
 }
-@media (max-width: 415px){
+@media (max-width: 1049px){
   .fixed-top.scrolled {
     backdrop-filter: blur(10px);
     transition: backdrop-filter 200ms linear;
@@ -695,30 +695,110 @@ border-bottom-left-radius:5px;
   position: absolute;
   background-repeat: no-repeat;
 }
+
 @media (min-width: 416px){
- .webDesignBG-Mo{
+ 
+}
+.mAboutTitle{
+  writing-mode: vertical-lr;
+  margin-top: 122px;
+}
+@media (min-width: 700px){
+  .mAboutTitle{
+  margin-top: 32vh !important;
+  }
+  .webDesignBG-Mo{
     width: 70vw;
     margin:-46vh 0 0 20vw;
     }
-}
-@media (min-width: 700px){
+  .businessDesignBG-Mo{
+    height: 50vh !important;
+    width: 70vw;
+    margin: -86vh auto 0 auto !important;
+  }
+  .toBusinessDesgin{
+    margin-top: -15vh !important;
+    height: 98vh !important;
+  }
   .homeMobileCont{
     text-align: center !important;
     left: -13vw;
   }
+  .imgMoblieBGCover{
+    height: 160vh !important;
+  }
+  .tableLimit{
+    max-width: 600px;
+    margin: 0 auto !important;
+  }
+  .priceImg{
+    top:25vh !important;
+    width: calc(80% + 1.5em) !important;
+  }
+  .processBG-Mo{
+    height: 80vh !important;
+  }
+  .workImgSet {
+    height: 44vh !important;
+}
 }
 @media (min-width: 1000px){
   .mt-10{
     margin-top:10em
     }
-    .tableLimit{
-      max-width: 600px;
-      margin: 0 auto !important;
-    }
-    .processBG-Mo{
-      height: 80vh !important;
-    }
  }
+
+ .mt5rem{
+   margin-top: 4.5rem;
+ }
+ .h-100vh{
+   height: calc(100vh - 4.5rem);
+   overflow: hidden;
+ }
+.titleImgSet{
+  height: 23vh;
+  width: 100vw;
+  background: black;
+  overflow: hidden;
+  position: relative;
+}
+.h-100vh img{
+ opacity: 0.5;
+ width: 100vw;
+ object-fit: cover;
+ background-repeat: no-repeat;
+}
+.shareTitle{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+}
+.shareConternt{
+  height: 64vh;
+  overflow: scroll;
+}
+.shareConterntPadding{
+  padding: 2rem;
+}
+.shareTag{
+  position: absolute;
+  bottom:1rem;
+  right: 1rem;
+}
+.shareBack{
+  position: absolute;
+  top: 5.5rem;
+  left:1rem;
+  z-index: 1;
+  color: #fff;
+}
+.shareBack:hover{
+  opacity: 0.6;
+  color: #fff;
+}
 
 
 .businessDesignBG-Mo{
@@ -946,11 +1026,11 @@ border-bottom-left-radius:5px;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  width: calc(120% + 1.5em);
+  width: calc(90% + 1.5em);
   height: 71vh;
   min-height: 400px;
   bottom: 0;
-  right: -40vw;
+  right: -3vw;
   top: 38vh;
   overflow: hidden;
 }
@@ -965,8 +1045,7 @@ border-bottom-left-radius:5px;
 .priceHeight{
   width:calc(100% + 0.75rem);
   overflow: hidden;
-  height: calc(100vh - 4.5rem);
-  min-height: 790px;
+  height: calc(111vh - 4.5rem);
   position: relative;
 }
 /*webPrice*/
@@ -974,7 +1053,8 @@ border-bottom-left-radius:5px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 250px;
+  min-height: 250px;
+  height: 30vh;
 }
 .workText{
   position: absolute;
