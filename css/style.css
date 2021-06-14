@@ -474,7 +474,7 @@ border-bottom-left-radius:5px;
 }
 
 .nav-height{
-  margin-top: 75px;
+  margin-top: 5.5rem;
 }
 
 
@@ -580,7 +580,6 @@ border-bottom-left-radius:5px;
   text-decoration: none;
   color: var(--text-color);
 }
-
 
 .webProcess{
   margin: 1em auto .5em auto;
@@ -1076,6 +1075,14 @@ a {
   min-height: 250px;
   height: 30vh;
 }
+.workImgSetPC{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 250px;
+  height: 28vh;
+}
+
 .workText{
   position: absolute;
   height: 100%; 
@@ -1083,6 +1090,17 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   right: 0;
 }
+
+.workTextPC{
+  position: absolute;
+  height: 100%; 
+  width: 35%;
+  background-color: rgba(0, 0, 0, 0.5);
+  right: 0;
+  opacity: 0;
+}
+
+
 .soureText{
   position: absolute;
   height: 100%; 
@@ -1434,11 +1452,14 @@ a {
 }
 
 .panel:nth-child(5) {
-	background: #456789;
 	padding: 5em;
 }
+.workTitle{
+  font-size: 3rem;
+  margin-top: -2rem;
+  font-weight: bolder;
+}
 .panel:nth-child(6) {
-	background: #123456;
 	padding: 5em;
 }
 /* pcHOME */

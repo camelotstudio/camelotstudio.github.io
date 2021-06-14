@@ -41,7 +41,7 @@
         <div id="navbarCamelot" class="navbar-collapse collapse show">
           <ul id="main-menu" class="navbar-nav navbar-container">
             <li class="nav-item">
-              <a href="#webDesign" class="nav-link">網頁設計</a>
+              <a href="index.html#webDesign" class="nav-link">網頁設計</a>
             </li>
             <li class="nav-item">
               <a href="#businessDesgin" class="nav-link">商業設計</a>
@@ -109,50 +109,48 @@
       <!--search-->
       <div class="row">
         <div class="col-sm-12 col-lg-4 col-md-6">
-          <a class="text-decoration-none" href="./SourceShareContent.html">
-            <div class="card mb-3 text-white main-title" style="max-width: 540px;">
+          <a class="text-decoration-none" href="./mSourceShareContent.html">
+             <div class="card mb-3 text-white main-title " style="max-width: 540px;">
               <div class="row g-0">
-                <div class="col-8">
+              <div class="col-8">
                   <div class="card-body pe-0">
-                    <h5 class="card-title text-center">Card title</h5>
-                    <hr class="shareHr">
-                    <p class="card-text">一二三四五六七八九十一二三四五六七八九十一二三四五</p>
-                    <p class="text-end mb-0"><small class="me-2" style="color:#34BB8A;">#標籤</small><small class=" me-2" style="color:#34BB8A;">#標籤</small></p>
-                    <p class="text-end mb-0"><small class="text-white me-2">Last updated 3 mins ago</small></p>
+                  <h5 class="card-title text-center">Card title</h5>
+                  <hr class="shareHr">
+                  <p class="card-text">一二三四五六七八九十一二三四五六七八九十一二三四五</p>
+                  <p class="text-end mb-0"><small class="me-2" style="color:#34BB8A;">#標籤</small><small class=" me-2" style="color:#34BB8A;">#標籤</small></p>
+                  <p class="text-end mb-0"><small class="text-white me-2">Last updated 3 mins ago</small></p>
                   </div>
-                </div>
-                <div class="col-4 position-relative">
+              </div>
+              <div class="col-4 position-relative">
                   <div class="img-mask-1">
-                    <div class="triangle triangle-rb"></div>
+                  <div class="triangle triangle-rb"></div>
                   </div>
                   <img src="https://unsplash.it/500/500?image=1" alt="..." style="width: 100%;height: 100%;object-fit: cover;border-radius: 5px;">
-                </div>
               </div>
-            </div>
+              </div>
+             </div>
           </a>
         </div>
         <div class="col-sm-12 col-lg-4 col-md-6">
-          <a class="text-decoration-none" href="./SourceShareContent.html">
-            <div class="card mb-3 text-white main-title" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-4 position-relative">
-                  <div class="img-mask-2">
-                    <div class="triangle triangle-lt"></div>
-                  </div>
-                  <img src="https://unsplash.it/500/500?image=10" alt="..." style="width: 100%;height: 100%;object-fit: cover;border-radius: 5px;">
+          <div class="card mb-3 text-white main-title" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-4 position-relative">
+                <div class="img-mask-2">
+                  <div class="triangle triangle-lt"></div>
                 </div>
-                <div class="col-8">
-                  <div class="card-body ps-0">
-                    <h5 class="card-title text-center">Card title</h5>
-                    <hr class="shareHr">
-                    <p class="card-text">一二三四五六七八九十一二三四五六七八九十一二三四五</p>
-                    <p class="text-end mb-0"><small class="me-2" style="color:#34BB8A;">#標籤</small><small class=" me-2" style="color:#34BB8A;">#標籤</small></p>
-                    <p class="text-end mb-0"><small class="text-white">Last updated 3 mins ago</small></p>
-                  </div>
+                <img src="https://unsplash.it/500/500?image=10" alt="..." style="width: 100%;height: 100%;object-fit: cover;border-radius: 5px;">
+              </div>
+              <div class="col-8">
+                <div class="card-body ps-0">
+                  <h5 class="card-title text-center">Card title</h5>
+                  <hr class="shareHr">
+                  <p class="card-text">一二三四五六七八九十一二三四五六七八九十一二三四五</p>
+                  <p class="text-end mb-0"><small class="me-2" style="color:#34BB8A;">#標籤</small><small class=" me-2" style="color:#34BB8A;">#標籤</small></p>
+                  <p class="text-end mb-0"><small class="text-white">Last updated 3 mins ago</small></p>
                 </div>
               </div>
             </div>
-          </a>
+          </div>
         </div>
         <div class="col-sm-12 col-lg-4 col-md-6">
           <div class="card mb-3 text-white main-title" style="max-width: 540px;">
@@ -245,20 +243,20 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script>
         var toggle = document.getElementById("theme-toggle");
-        
+
         var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
         if (storedTheme)
             document.documentElement.setAttribute('data-theme', storedTheme)
-        
-        
+
+
         toggle.onclick = function() {
             var currentTheme = document.documentElement.getAttribute("data-theme");
             var targetTheme = "light";
-        
+
             if (currentTheme === "light") {
                 targetTheme = "dark";
             }
-        
+
             document.documentElement.setAttribute('data-theme', targetTheme)
             localStorage.setItem('theme', targetTheme);
         };
