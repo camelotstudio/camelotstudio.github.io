@@ -775,6 +775,12 @@ border-bottom-left-radius:5px;
   overflow: hidden;
   position: relative;
 }
+.titleImgSetPC{
+  height: 23vh;
+  background: black;
+  overflow: hidden;
+  position: relative;
+}
 .h-100vh img{
  opacity: 0.5;
  width: 100vw;
@@ -809,7 +815,7 @@ a {
 }
 .shareBack{
   position: absolute;
-  top: 5.5rem;
+  top: 2rem;
   left:1rem;
   z-index: 1;
   color: #fff;
