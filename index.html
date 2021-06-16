@@ -76,13 +76,55 @@
       </nav>
       <div class="pcNavDisplay pcNavbar fixed-right">
         <div class="container">
-          <a class="text-decoration-none" href="#webDesign"><div class="pcNav-border"><div class="pcNav-item">網頁設計</div></div></a>
-          <a class="text-decoration-none" href="#businessDesgin"><div class="pcNav-border"><div class="pcNav-item">網頁設計→價目表</div></div></a>
-          <a class="text-decoration-none" href="#aboutUs"><div class="pcNav-border"><div class="pcNav-item">商業設計</div></div></a>
-          <a class="text-decoration-none" href="#works"><div class="pcNav-border"><div class="pcNav-item">商業設計→價目表</div></div></a>
-          <a class="text-decoration-none" href="#sourceShare"><div class="pcNav-border"><div class="pcNav-item">關於我們</div></div></a>
-          <a class="text-decoration-none" href="#"><div class="pcNav-border"><div class="pcNav-item">作品集</div></div></a>
-          <a class="text-decoration-none" href="#"><div class="pcNav-border"><div class="pcNav-item">技術分享</div></div></a>
+          <a class="text-decoration-none" href="#webDesign">
+            <div class="row pcNav-hover">
+              <div class="col"><div class="pcNav-item text-end">服務介紹</div></div>
+              <div class="col-1"><div class="pcNav-border"></div></div>
+              <div class="col"><div class="pcNav-item text-start">網頁設計</div></div>
+            </div>
+          </a>
+          <a class="text-decoration-none" href="#webDesignPrice">
+            <div class="row pcNav-hover">
+              <div class="col"><div class="pcNav-item text-end">價目表</div></div>
+              <div class="col-1"><div class="pcNav-border"></div></div>
+              <div class="col"></div>
+            </div>
+          </a>
+          <a class="text-decoration-none" href="#businessDesgin">
+            <div class="row pcNav-hover">
+              <div class="col"><div class="pcNav-item text-end">服務介紹</div></div>
+              <div class="col-1"><div class="pcNav-border"></div></div>
+              <div class="col"><div class="pcNav-item text-start">商業設計</div></div>
+            </div>
+          </a>
+          <a class="text-decoration-none" href="#businessDesginPrice">
+            <div class="row pcNav-hover">
+              <div class="col"><div class="pcNav-item text-end">價目表</div></div>
+              <div class="col-1"><div class="pcNav-border"></div></div>
+              <div class="col"></div>
+            </div>
+          </a>
+          <a class="text-decoration-none" href="#aboutUs">
+            <div class="row pcNav-hover">
+              <div class="col"></div>
+              <div class="col-1"><div class="pcNav-border"></div></div>
+              <div class="col"><div class="pcNav-item text-start">關於我們</div></div>
+            </div>
+          </a>
+          <a class="text-decoration-none" href="#works">
+            <div class="row pcNav-hover">
+              <div class="col"></div>
+              <div class="col-1"><div class="pcNav-border"></div></div>
+              <div class="col"><div class="pcNav-item text-start">作品集</div></div>
+            </div>
+          </a>
+          <a class="text-decoration-none" href="#sourceShare">
+            <div class="row pcNav-hover">
+              <div class="col"></div>
+              <div class="col-1"><div class="pcNav-border"></div></div>
+              <div class="col"><div class="pcNav-item text-start">技術分享</div></div>
+            </div>
+          </a>
         </div>
       </div>
       <!-- .nav -->
@@ -148,10 +190,40 @@
           </div>
         </div>
         <div class="ml-20rem">
-          <a class="h4 ls-price-pc text-decoration-none">
+          <a href="#webDesignPrice" class="h4 ls-price-pc text-decoration-none">
             價目表<img src="./assets/img/goPriceIcon.svg" width="38px" height="41px" alt="">
           </a>
         </div>
+      </section>
+      <section id="webDesignPrice" class="panel">
+        <div class="secPriceBorder">
+          <div class="secPriceBorderLeftTop"></div> 
+          <div class="secPriceTitle fw-bold">價目表</div>
+          <div class="secPriceBorderLeftbottom"></div>
+          <div class="row priceMarginSet">
+            <div class="col-lg-5">
+              <div class="fw-bold fs-3 mb-3">單頁網站設計</div>
+              <div class="ps-4">
+                <div class="row">
+                  <div class="col-8">
+                    <p class="main-border le-space">✓草圖提供 2版 </p>
+                    <p class="main-border le-space m-0">✓可修改   1次 </p>
+                  </div>
+                  <div class="col-4">
+                    <p class="main-border text-end">$9,999起</p>
+                  </div>
+                </div>
+                <hr class="priceHr">
+              </div>
+              <p>多頁網站設計</p>
+              <p>簡單資料主細表</p>
+              <p>關聯式主細表</p>
+              <p>會員系統</p>
+            </div>
+            <div class="col-lg-7"><div class="priceImg priceImgPC"></div></div>
+          </div> 
+        </div>
+        <a href="#aboutUs" class="fs-5 fw-bold text-decoration-none mt-5 priceAboutUs">連絡我們，以取得更詳細的報價>></a>
       </section>
       <section id="businessDesgin" class="panel">
         <div class="secBorder">
@@ -197,6 +269,44 @@
             價目表<img src="./assets/img/goPriceIcon.svg" width="38px" height="41px" alt="">
           </a>
         </div>
+      </section>
+      <section id="businessDesginPrice" class="panel">
+        <div class="secPriceBorder">
+          <div class="secPriceBorderLeftTop"></div> 
+          <div class="secPriceTitle fw-bold">價目表</div>
+          <div class="secPriceBorderLeftbottom"></div>
+          <div class="row priceMarginSetBus">
+            <div class="col-lg-5">
+              <div class="fw-bold fs-3 mb-3">海報設計</div>
+              <div class="ps-4">
+                <div class="row">
+                  <div class="col-4">
+                    <p class="main-border le-space priceBoreder px-1 py-3 mt-4 fs-5 text-center">簡易<br>海報</p>
+                  </div>
+                  <div class="col-8 main-border mt-3">
+                      <p>$ 5,000 起</p>
+                      <p>提供2版草稿</p>
+                      <p>草稿可修改2次</p>
+                  </div>
+                  <div class="col-4">
+                    <p class="main-border le-space priceBoreder px-1 py-3 mt-4 fs-5 text-center">簡易<br>海報</p>
+                  </div>
+                  <div class="col-8 main-border mt-3">
+                      <p>$ 5,000 起</p>
+                      <p>提供2版草稿</p>
+                      <p>草稿可修改2次</p>
+                  </div>
+                </div>
+                <hr class="priceHr">
+              </div>
+              <p>橫幅設計</p>
+              <p>海報設計</p>
+              <p>其他設計</p>
+            </div>
+            <div class="col-lg-7"><div class="priceImg02 priceImgPC"></div></div>
+          </div> 
+        </div>
+        <a href="#aboutUs" class="fs-5 fw-bold text-decoration-none mt-5 priceAboutUs">連絡我們，以取得更詳細的報價>></a>
       </section>
       <section id="aboutUs" class="panel">
         <div class="aboutUsSec">
@@ -699,7 +809,20 @@
           $(this).find('.workTextPC').css("opacity","0").fadeOut(100);
         });
       });
-      </script>
+    </script>
     <!-- work hover -->
+    <!-- pc navRight hover -->
+    <script>
+      $(document).ready(function(){
+        $('.pcNav-hover').hover(function(){
+          $(this).find('.pcNav-item').css("display","block");
+          $(this).find('.pcNav-border').css("opacity","1");
+          },function(){
+          $(this).find('.pcNav-item').css("display","none");
+          $(this).find('.pcNav-border').css("opacity","0.5");
+        });
+      });
+    </script>
+    <!-- pc navRight hover -->
   </body>
 </html>
