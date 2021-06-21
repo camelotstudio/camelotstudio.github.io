@@ -815,10 +815,10 @@
     <script>
       $(document).ready(function(){
         $('.pcNav-hover').hover(function(){
-          $(this).find('.pcNav-item').css("display","block");
+          $('.pcNav-item').css("display","block");
           $(this).find('.pcNav-border').css("opacity","1");
           },function(){
-          $(this).find('.pcNav-item').css("display","none");
+          $('.pcNav-item').css("display","none");
           $(this).find('.pcNav-border').css("opacity","0.5");
         });
       });

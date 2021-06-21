@@ -1241,66 +1241,20 @@
     background-size: 100vh auto;
     background-position: 35vw top;
     background-attachment: fixed;
+    overflow:hidden;
   }
   [data-theme='light'] .homePCBGts{
-    background-image: url('../assets/img/light-step/homePCImg-ts.svg');
+    background-image: url('../assets/img/light-step/homePCImg-BG.svg');
   }
   [data-theme='dark']  .homePCBGts{
-    background-image: url('../assets/img/dark-step/homePCImg-ts.svg');
-  }
-  [data-theme='light'] .homePCBGte{
-    background-image: url('../assets/img/light-step/homePCImg-te.svg');
-  }
-  [data-theme='dark'] .homePCBGte{
-    background-image: url('../assets/img/dark-step/homePCImg-te.svg');
-  }
-  [data-theme='light'] .homePCBGbs{
-    background-image: url('../assets/img/light-step/homePCImg-bs.svg');
-  }
-  [data-theme='dark'] .homePCBGbs{
-    background-image: url('../assets/img/dark-step/homePCImg-bs.svg');
-  }
-  [data-theme='light'] .homePCBGbe{
-    background-image: url('../assets/img/light-step/homePCImg-be.svg');
-  }
-  [data-theme='dark'] .homePCBGbe{
-    background-image: url('../assets/img/dark-step/homePCImg-be.svg');
+    background-image: url('../assets/img/dark-step/homePCImg-BG.svg');
   }
   .homePCBGts{
     position: absolute;
-    top: -11px;
-    width: 38vw;
-    height: 47vh;
-    background-size: 38vw 25vw;
-    background-repeat: no-repeat;
-  }
-  .homePCBGte{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 20vw;
-    height: 45vh;
-    background-size: 21vw 22vw;
-    background-repeat: no-repeat;
-  }
-  .homePCBGbs{
-    position: absolute;
-    bottom: 0;
-    min-width: 257px;
-    min-height: 192px;
-    width: 30vw;
-    height: 40vh;
-    background-size:cover;
-    background-repeat: no-repeat;
-  }
-  .homePCBGbe{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    min-width: 265px;
-    min-height: 175px;
-    width: 25vw;
-    height: 15vw;
+    top: -4em;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh + 4rem);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -1318,25 +1272,18 @@
   .secBorder{
       border-bottom: 1px solid var(--text-color);
     border-radius:5px;
-    margin: 5em 5em 3em 17rem;
-    width: 65%;
+    margin: 5em auto;
+    width: 65vw;
     height: 80%;
     position: relative;
   }
-  .secBorder{
-      border-bottom: 1px solid var(--text-color);
-    border-radius:5px;
-    margin: 5em 5em 3em 17rem;
-    width: 65%;
-    height: 80%;
-    position: relative;
-  }
+
   .secPriceBorder{
       border-bottom: 1px solid var(--text-color);
       border-top: 1px solid var(--text-color);
       border-right: 1px solid var(--text-color);
-    margin: 5em 5em 3em 17rem;
-    width: 65%;
+    margin: 5em auto;
+    width: 65vw;
     height: 80%;
     position: relative;
     z-index: 1;
@@ -1389,10 +1336,10 @@
     letter-spacing: 0.5rem;
   }
   .aboutUsSec{
-    width: 65%;
+    width: 65vw;
     height: 80%;
     position: relative;
-    margin: 4em 5em 3em 17rem;
+    margin: 4em auto;
   }
   .mebBorder{
     border: 5px solid var(--about-color-blue);

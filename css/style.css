@@ -1317,16 +1317,8 @@ a {
 .secBorder{
 	border-bottom: 1px solid var(--text-color);
   border-radius:5px;
-  margin: 5em 5em 3em 17rem;
-  width: 65%;
-  height: 80%;
-  position: relative;
-}
-.secBorder{
-	border-bottom: 1px solid var(--text-color);
-  border-radius:5px;
-  margin: 5em 5em 3em 17rem;
-  width: 65%;
+  margin: 5em auto;
+  width: 65vw;
   height: 80%;
   position: relative;
 }
@@ -1335,7 +1327,7 @@ a {
 	border-top: 1px solid var(--text-color);
 	border-right: 1px solid var(--text-color);
   margin: 5em 5em 3em 17rem;
-  width: 65%;
+  width: 65vw;
   height: 80%;
   position: relative;
   z-index: 1;
@@ -1388,10 +1380,10 @@ a {
   letter-spacing: 0.5rem;
 }
 .aboutUsSec{
-  width: 65%;
+  width: 65vw;
   height: 80%;
   position: relative;
-  margin: 4em 5em 3em 17rem;
+  margin: 4em auto;
 }
 .mebBorder{
   border: 5px solid var(--about-color-blue);
