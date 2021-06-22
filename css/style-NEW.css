@@ -220,9 +220,9 @@
     align-items: center;
     justify-content: space-between;
     height: calc(100vh - 4.5em);
-    width: 15vw;
-    min-width: 288px;
-    margin-right: 7rem;
+    width: 18vw;
+    min-width: 160px;
+    margin: 0 auto;
   }
   @media (max-width: 416px){
     .pcNavDisplay {display: none;}
@@ -238,16 +238,61 @@
   }
   .pcNav-border{
   height: 2.5rem;
-  margin-bottom: 1.5rem;
   border-left: 3px solid var(--text-color);
+  padding-right: 15px;
+  right: 0;
+  transform: translate(100%, 0);
   opacity: 0.5;
+  transition: all ease-in 0.4s;
+  position: absolute;
   }
+  .navbar-nav:hover .nav-item .pcNav-border{
+    min-width: 130px;
+    right: 100%;
+    transform: translate(100%, 0);
+    position: absolute;
+  }
+  .navbar-nav.active .nav-item .pcNav-border{
+    width: 160px;
+    right: 100%;
+    transform: translate(100%, 0);
+    position: absolute;
+  }
+  .nav-item{
+    position: relative;
+  }
+  .navHeight{
+    height: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .pcNavContent{
+    opacity: 1 !important;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    transition-delay: 0.5s;
+    display: none;
+  }
+  .navbar-nav:hover .nav-item .pcNav-border .pcNavContent{
+    display:block;
+    transform: translate(10%, 0);
+    margin-top: -0.3rem;
+  }
+  .navbar-nav.active .nav-item .pcNav-border .pcNavContent{
+    display:block;
+    transform: translate(10%, 0);
+    margin-top: -0.3rem;
+  }
+  #toggeOnly{
+    opacity: 0;
+  }
+
   
   
   .pcNav-item{
     display: none;
-    font-size: 1.5rem;
+    
     color: var(--text-color);
+    margin: auto;
   }
   
   /* PC NAVBAR */
@@ -354,6 +399,7 @@
   }
   .navbar-collapse ul.navbar-nav {
     margin-top: 7rem;
+    min-width: 96px;
   }
   .navbar-collapse ul.navbar-nav li {
     opacity: 0;
@@ -1272,7 +1318,7 @@
   .secBorder{
       border-bottom: 1px solid var(--text-color);
     border-radius:5px;
-    margin: 5em auto;
+    margin: 5em auto 5em 9%;
     width: 65vw;
     height: 80%;
     position: relative;
@@ -1282,7 +1328,7 @@
       border-bottom: 1px solid var(--text-color);
       border-top: 1px solid var(--text-color);
       border-right: 1px solid var(--text-color);
-    margin: 5em auto;
+    margin: 5em auto 5em 9%;
     width: 65vw;
     height: 80%;
     position: relative;
