@@ -26,7 +26,7 @@
   </script>
   <body>
     <header>
-      <div class="navbar-wrapper">
+      <div id="navToggle" class="navbar-wrapper navHide">
         <div class="navbar fixed-top py-0">
           <!-- .container -->
           <div class="container">
@@ -42,7 +42,7 @@
         <!-- .navbar -->
       </div>
 
-      <nav>
+      <nav class="navHide">
         <div id="navbarCamelotPC" class="pcNavDisplay pcNavbar fixed-right">
           <ul id="main-menu" class="navbar-nav p-relative">
             <li class="nav-item navHeight">
@@ -83,7 +83,7 @@
       <!-- .nav -->
     </header>
     <!-- PC -->
-    <div class="well m-0" data-bs-spy="scroll" data-bs-target="#navbarCamelotPC" data-bs-offset="0" tabindex="0">
+    <div id="well" class="well m-0" data-bs-spy="scroll" data-bs-target="#navbarCamelotPC" data-bs-offset="0" tabindex="0">
       <!-- home -->
       <section id="home" class="panel">
         <div class="panelBG panelBG01">
@@ -678,11 +678,26 @@
           $(this).attr('aria-expanded', function (i, attr) {
           return attr == 'true' ? 'false' : 'true'});
         });
+        //scroll toggle navRight
+        $('#well').scroll(function() {
+          console.log("ssss");
+          if ($('#well').scrollTop() > 100){
+              $('nav').removeClass("navHide");
+              $('#navToggle').removeClass("navHide");
+          }
+          else {
+              $('nav').addClass( "navHide");
+              $('#navToggle').addClass("navHide");
+          }
+              });
+        //scroll toggle navRight
       });
     </script>
     <!-- pc navRight hover -->
    <script>
-    $(this).closest('ul').find('> li.tree-parent')
+    $(document).ready(function(){
+
+    });
    </script>
   </body>
 </html>

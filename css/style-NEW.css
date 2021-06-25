@@ -1209,9 +1209,9 @@
     left: 0;
   }
   /* pcHOME */
-  
-  
-  
+  .navHide{
+    display: none !important;
+  }
   .well {
       scroll-snap-type: y mandatory;
       overflow-y: scroll;
