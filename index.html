@@ -24,14 +24,14 @@
         window.location.href = './m.html'
       }
   </script>
-  <body style="overflow: hidden;">
+  <body>
     <header>
-      <div class="navbar-wrapper">
+      <div id="navToggle" class="navbar-wrapper navHide">
         <div class="navbar fixed-top py-0">
           <!-- .container -->
           <div class="container">
             <a href="index.html" class="navbar-brand"><div class="logo"></div></a>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCamelot" aria-controls="navbarCamelot" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="showContent" class="navbar-toggler collapsed" type="button" aria-expanded="false">
               <div id="nav-icon">
                 <span></span><span></span><span></span><span></span>
               </div>
@@ -41,30 +41,36 @@
         </div>
         <!-- .navbar -->
       </div>
+      
       <nav>
-        <div id="navbarCamelot" class="navbar-collapse collapse show">
-          <ul id="main-menu" class="navbar-nav navbar-container">
-            <li class="nav-item">
-              <a href="#webDesign" class="nav-link">網頁設計</a>
+        <div id="navbarCamelotPC" class="pcNavDisplay pcNavbar fixed-right navHide">
+          <ul id="main-menu" class="navbar-nav p-relative">
+            <li class="nav-item navHeight">
+              <a href="#home" class="nav-link pcNav-border ps-2"><div class="pcNavContent">首頁</div></a>
             </li>
-            <li class="nav-item">
-              <a href="#businessDesgin" class="nav-link">商業設計</a>
+            <li class="nav-item navHeight">
+              <a href="#webDesign" class="nav-link pcNav-border ps-2"><div class="pcNavContent">網頁設計</div></a>
             </li>
-            <li class="nav-item">
-              <a href="#aboutUs" class="nav-link">關於我們</a>
+            <li class="nav-item navHeight">
+              <a href="#businessDesgin" class="nav-link pcNav-border ps-2"><div class="pcNavContent">商業設計</div></a>
             </li>
-            <li class="nav-item">
-              <a href="#works" class="nav-link">作品集</a>
+            <li class="nav-item navHeight">
+              <a href="#Price" class="nav-link pcNav-border ps-2"><div class="pcNavContent">價目表</div></a>
             </li>
-            <li class="nav-item">
-              <a href="#sourceShare" class="nav-link">技術分享</a>
+            <li class="nav-item navHeight">
+              <a href="#aboutUs" class="nav-link pcNav-border ps-2"><div class="pcNavContent">關於我們</div></a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">客戶登入</a>
+            <li class="nav-item navHeight">
+              <a href="#works" class="nav-link pcNav-border ps-2"><div class="pcNavContent">作品集</div></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item navHeight">
+              <a href="#sourceShare" class="nav-link pcNav-border ps-2"><div class="pcNavContent">技術分享</div></a>
+            </li>
+            <li class="nav-item navHeight">
+              <a href="#" class="nav-link pcNav-border ps-2"><div class="pcNavContent">客戶登入</div></a>
+            </li>
+            <li id="toggeOnly" class="nav-item">
               <div class="nav-link text-end">
-                <a href="index.html" class="nav-link fs-6 mb-3">回首頁</a>
                 <p>切換閱讀模式</p>
                 <div id="theme-toggle" class="form-check form-switch">
                   <input class="form-check-input float-end" type="checkbox" id="flexSwitchCheckChecked" checked>
@@ -74,65 +80,15 @@
           </ul>
         </div>
       </nav>
-      <div class="pcNavDisplay pcNavbar fixed-right">
-        <div class="container">
-          <a class="text-decoration-none" href="#webDesign">
-            <div class="row pcNav-hover">
-              <div class="col"><div class="pcNav-item text-end">服務介紹</div></div>
-              <div class="col-1"><div class="pcNav-border"></div></div>
-              <div class="col"><div class="pcNav-item text-start">網頁設計</div></div>
-            </div>
-          </a>
-          <a class="text-decoration-none" href="#webDesignPrice">
-            <div class="row pcNav-hover">
-              <div class="col"><div class="pcNav-item text-end">價目表</div></div>
-              <div class="col-1"><div class="pcNav-border"></div></div>
-              <div class="col"></div>
-            </div>
-          </a>
-          <a class="text-decoration-none" href="#businessDesgin">
-            <div class="row pcNav-hover">
-              <div class="col"><div class="pcNav-item text-end">服務介紹</div></div>
-              <div class="col-1"><div class="pcNav-border"></div></div>
-              <div class="col"><div class="pcNav-item text-start">商業設計</div></div>
-            </div>
-          </a>
-          <a class="text-decoration-none" href="#businessDesginPrice">
-            <div class="row pcNav-hover">
-              <div class="col"><div class="pcNav-item text-end">價目表</div></div>
-              <div class="col-1"><div class="pcNav-border"></div></div>
-              <div class="col"></div>
-            </div>
-          </a>
-          <a class="text-decoration-none" href="#aboutUs">
-            <div class="row pcNav-hover">
-              <div class="col"></div>
-              <div class="col-1"><div class="pcNav-border"></div></div>
-              <div class="col"><div class="pcNav-item text-start">關於我們</div></div>
-            </div>
-          </a>
-          <a class="text-decoration-none" href="#works">
-            <div class="row pcNav-hover">
-              <div class="col"></div>
-              <div class="col-1"><div class="pcNav-border"></div></div>
-              <div class="col"><div class="pcNav-item text-start">作品集</div></div>
-            </div>
-          </a>
-          <a class="text-decoration-none" href="#sourceShare">
-            <div class="row pcNav-hover">
-              <div class="col"></div>
-              <div class="col-1"><div class="pcNav-border"></div></div>
-              <div class="col"><div class="pcNav-item text-start">技術分享</div></div>
-            </div>
-          </a>
-        </div>
-      </div>
       <!-- .nav -->
     </header>
     <!-- PC -->
-    <div id="well" class="well m-0">
+    <div id="well" class="well m-0" data-bs-spy="scroll" data-bs-target="#navbarCamelotPC" data-bs-offset="0" tabindex="0">
       <!-- home -->
-      <section class="panel">
+      <section id="home" name="home" class="panel">
+        <div id="scrollToggle" class="scrollDown">
+          <a href="#webDesign" class="text-decoration-none scrollDownText">Scroll ▼</a>
+        </div>
         <div class="panelBG panelBG01">
           <div class="panelBG panelBG02">
             <div class="panelBG panelBG03">
@@ -146,9 +102,6 @@
           <h3 class="mt-4 le-space">邁開網路世界的第一步!</h3>
         </div>  
         <div class="homePCBGts"></div>
-        <div class="homePCBGte"></div>
-        <div class="homePCBGbs"></div>
-        <div class="homePCBGbe"></div>
       </section>
       <section id="webDesign" class="panel">
         <div class="secBorder">
@@ -188,43 +141,14 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="ml-20rem">
-          <a href="#webDesignPrice" class="h4 ls-price-pc text-decoration-none">
-            價目表<img src="./assets/img/goPriceIcon.svg" width="38px" height="41px" alt="">
-          </a>
+          <div class="">
+            <a href="#Price" class="h4 ls-price-pc text-decoration-none">
+              價目表<img src="./assets/img/goPriceIcon.svg" width="38px" height="41px" alt="">
+            </a>
+          </div>
         </div>
       </section>
-      <section id="webDesignPrice" class="panel">
-        <div class="secPriceBorder">
-          <div class="secPriceBorderLeftTop"></div> 
-          <div class="secPriceTitle fw-bold">價目表</div>
-          <div class="secPriceBorderLeftbottom"></div>
-          <div class="row priceMarginSet">
-            <div class="col-lg-5">
-              <div class="fw-bold fs-3 mb-3">單頁網站設計</div>
-              <div class="ps-4">
-                <div class="row">
-                  <div class="col-8">
-                    <p class="main-border le-space">✓草圖提供 2版 </p>
-                    <p class="main-border le-space m-0">✓可修改   1次 </p>
-                  </div>
-                  <div class="col-4">
-                    <p class="main-border text-end">$9,999起</p>
-                  </div>
-                </div>
-                <hr class="priceHr">
-              </div>
-              <p>多頁網站設計</p>
-              <p>簡單資料主細表</p>
-              <p>關聯式主細表</p>
-              <p>會員系統</p>
-            </div>
-            <div class="col-lg-7"><div class="priceImg priceImgPC"></div></div>
-          </div> 
-        </div>
-        <a href="#aboutUs" class="fs-5 fw-bold text-decoration-none mt-5 priceAboutUs">連絡我們，以取得更詳細的報價>></a>
-      </section>
+      
       <section id="businessDesgin" class="panel">
         <div class="secBorder">
           <div class="secBorderLeft"></div>
@@ -263,51 +187,97 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="ml-20rem">
-          <a href="#businessDesginPrice" class="h4 ls-price-pc text-decoration-none">
-            價目表<img src="./assets/img/goPriceIcon.svg" width="38px" height="41px" alt="">
-          </a>
+          <div class="linkPosSet">
+            <a href="#businessDesginPrice" class="h4 ls-price-pc text-decoration-none">
+              價目表<img src="./assets/img/goPriceIcon.svg" width="38px" height="41px" alt="">
+            </a>
+          </div>
         </div>
       </section>
-      <section id="businessDesginPrice" class="panel">
+      <section id="Price" class="panel">
         <div class="secPriceBorder">
+          <div class="switchPrice">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">網頁設計</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">商業設計</button>
+              </li>
+            </ul>
+          </div>
           <div class="secPriceBorderLeftTop"></div> 
           <div class="secPriceTitle fw-bold">價目表</div>
           <div class="secPriceBorderLeftbottom"></div>
-          <div class="row priceMarginSetBus">
-            <div class="col-lg-5">
-              <div class="fw-bold fs-3 mb-3">海報設計</div>
-              <div class="ps-4">
-                <div class="row">
-                  <div class="col-4">
-                    <p class="main-border le-space priceBoreder px-1 py-3 mt-4 fs-5 text-center">簡易<br>海報</p>
+          <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="row priceMarginSet">
+                <div class="col-lg-5">
+                  <div class="fw-bold fs-3 mb-3">單頁網站設計</div>
+                  <div class="ps-4">
+                    <div class="row">
+                      <div class="col-8">
+                        <p class="main-border le-space">✓草圖提供 2版 </p>
+                        <p class="main-border le-space m-0">✓可修改   1次 </p>
+                      </div>
+                      <div class="col-4">
+                        <p class="main-border text-end">$9,999起</p>
+                      </div>
+                    </div>
+                    <hr class="priceHr">
                   </div>
-                  <div class="col-8 main-border mt-3">
-                      <p>$ 5,000 起</p>
-                      <p>提供2版草稿</p>
-                      <p>草稿可修改2次</p>
-                  </div>
-                  <div class="col-4">
-                    <p class="main-border le-space priceBoreder px-1 py-3 mt-4 fs-5 text-center">簡易<br>海報</p>
-                  </div>
-                  <div class="col-8 main-border mt-3">
-                      <p>$ 5,000 起</p>
-                      <p>提供2版草稿</p>
-                      <p>草稿可修改2次</p>
-                  </div>
+                  <p>多頁網站設計</p>
+                  <p>簡單資料主細表</p>
+                  <p>關聯式主細表</p>
+                  <p>會員系統</p>
                 </div>
-                <hr class="priceHr">
-              </div>
-              <p>橫幅設計</p>
-              <p>海報設計</p>
-              <p>其他設計</p>
+                <div class="col-lg-7"><div class="priceImg priceImgPC"></div></div>
+              </div> 
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="row priceMarginSetBus">
+                <div class="col-lg-5">
+                  <div class="fw-bold fs-3 mb-3">海報設計</div>
+                  <div class="ps-4">
+                    <div class="row">
+                      <div class="col-4">
+                        <p class="main-border le-space priceBoreder px-1 py-3 mt-4 fs-5 text-center">簡易<br>海報</p>
+                      </div>
+                      <div class="col-8 main-border mt-3">
+                          <p>$ 5,000 起</p>
+                          <p>提供2版草稿</p>
+                          <p>草稿可修改2次</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="main-border le-space priceBoreder px-1 py-3 mt-4 fs-5 text-center">簡易<br>海報</p>
+                      </div>
+                      <div class="col-8 main-border mt-3">
+                          <p>$ 5,000 起</p>
+                          <p>提供2版草稿</p>
+                          <p>草稿可修改2次</p>
+                      </div>
+                    </div>
+                    <hr class="priceHr">
+                  </div>
+                  <p>橫幅設計</p>
+                  <p>海報設計</p>
+                  <p>其他設計</p>
+                </div>
+                <div class="col-lg-7"><div class="priceImg02 priceImgPC"></div></div>
+              </div> 
             </div>
-            <div class="col-lg-7"><div class="priceImg02 priceImgPC"></div></div>
-          </div> 
+          </div>
+          <div class="linkPosSet">
+            <a href="#aboutUs" class="fs-5 fw-bold text-decoration-none mt-5 ">連絡我們，以取得更詳細的報價>></a>
+          </div>
         </div>
+      </section>
+      <!-- 
+      <section id="businessDesginPrice" class="panel">
+        
         <a href="#aboutUs" class="fs-5 fw-bold text-decoration-none mt-5 priceAboutUs">連絡我們，以取得更詳細的報價>></a>
       </section>
+      -->
       <section id="aboutUs" class="panel">
         <div class="aboutUsSec">
           <div class="row">
@@ -647,120 +617,6 @@
     </div>
     <!-- PC -->
     <!-- Script -->
-    <!-- PC fullsrceen scroll -->
-    <script>
-      (function() {
-	"use strict";
-	/*[pan and well CSS scrolls]*/
-	var pnls = document.querySelectorAll('.panel').length,
-		scdir, hold = false;
-
-	function _scrollY(obj) {
-		var slength, plength, pan, step = 100,
-			vh = window.innerHeight / 100,
-			vmin = Math.min(window.innerHeight, window.innerWidth) / 100;
-		if ((this !== undefined && this.id === 'well') || (obj !== undefined && obj.id === 'well')) {
-			pan = this || obj;
-			plength = parseInt(pan.offsetHeight / vh);
-		}
-		if (pan === undefined) {
-			return;
-		}
-		plength = plength || parseInt(pan.offsetHeight / vmin);
-		slength = parseInt(pan.style.transform.replace('translateY(', ''));
-		if (scdir === 'up' && Math.abs(slength) < (plength - plength / pnls)) {
-			slength = slength - step;
-		} else if (scdir === 'down' && slength < 0) {
-			slength = slength + step;
-		} else if (scdir === 'top') {
-			slength = 0;
-		}
-		if (hold === false) {
-			hold = true;
-			pan.style.transform = 'translateY(' + slength + 'vh)';
-			setTimeout(function() {
-				hold = false;
-			}, 1000);
-		}
-		console.log(scdir + ':' + slength + ':' + plength + ':' + (plength - plength / pnls));
-	}
-	/*[swipe detection on touchscreen devices]*/
-	function _swipe(obj) {
-		var swdir,
-			sX,
-			sY,
-			dX,
-			dY,
-			threshold = 100,
-			/*[min distance traveled to be considered swipe]*/
-			slack = 50,
-			/*[max distance allowed at the same time in perpendicular direction]*/
-			alT = 500,
-			/*[max time allowed to travel that distance]*/
-			elT, /*[elapsed time]*/
-			stT; /*[start time]*/
-		obj.addEventListener('touchstart', function(e) {
-			var tchs = e.changedTouches[0];
-			swdir = 'none';
-			sX = tchs.pageX;
-			sY = tchs.pageY;
-			stT = new Date().getTime();
-			//e.preventDefault();
-		}, false);
-
-		obj.addEventListener('touchmove', function(e) {
-			e.preventDefault(); /*[prevent scrolling when inside DIV]*/
-		}, false);
-
-		obj.addEventListener('touchend', function(e) {
-			var tchs = e.changedTouches[0];
-			dX = tchs.pageX - sX;
-			dY = tchs.pageY - sY;
-			elT = new Date().getTime() - stT;
-			if (elT <= alT) {
-				if (Math.abs(dX) >= threshold && Math.abs(dY) <= slack) {
-					swdir = (dX < 0) ? 'left' : 'right';
-				} else if (Math.abs(dY) >= threshold && Math.abs(dX) <= slack) {
-					swdir = (dY < 0) ? 'up' : 'down';
-				}
-				if (obj.id === 'well') {
-					if (swdir === 'up') {
-						scdir = swdir;
-						_scrollY(obj);
-					} else if (swdir === 'down' && obj.style.transform !== 'translateY(0)') {
-						scdir = swdir;
-						_scrollY(obj);
-
-					}
-					e.stopPropagation();
-				}
-			}
-		}, false);
-	}
-	/*[assignments]*/
-	var well = document.getElementById('well');
-	well.style.transform = 'translateY(0)';
-	well.addEventListener('wheel', function(e) {
-		if (e.deltaY < 0) {
-			scdir = 'down';
-		}
-		if (e.deltaY > 0) {
-			scdir = 'up';
-		}
-		e.stopPropagation();
-	});
-	well.addEventListener('wheel', _scrollY);
-	_swipe(well);
-	var tops = document.querySelectorAll('.top');
-	for (var i = 0; i < tops.length; i++) {
-		tops[i].addEventListener('click', function() {
-			scdir = 'top';
-			_scrollY(well);
-		});
-	}
-})();
-    </script>
-    <!-- PC fullsrceen scroll -->
     <script src="vendor/jquery-3.6.0.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script>
@@ -786,12 +642,13 @@
     </script>
     <!-- menuToggle -->
     <script>
-      const navLinks = document.querySelectorAll('.nav-item')
-      const menuToggle = document.getElementById('navbarCamelot')
+      const navLinks = document.querySelectorAll('.nav-item .pcNavContent')
+      const menuToggle = document.getElementById('navbarCamelotPC')
       const bsCollapse = new bootstrap.Collapse(menuToggle)
       navLinks.forEach((l) => {
-        l.addEventListener('click', () => { bsCollapse.toggle() })
+        l.addEventListener('click', () => { bsCollapse.innerText().toggle() })
       });
+
       $(function () {
         $(document).scroll(function () {
           var $nav = $(".fixed-top");
@@ -811,16 +668,50 @@
       });
     </script>
     <!-- work hover -->
-    <!-- pc navRight hover -->
-    <script>
+     <!-- pc navRight hover -->
+     <script>
       $(document).ready(function(){
-        $('.pcNav-hover').hover(function(){
-          $('.pcNav-item').css("display","block");
+        $('.nav-item').hover(function(){
           $(this).find('.pcNav-border').css("opacity","1");
           },function(){
-          $('.pcNav-item').css("display","none");
           $(this).find('.pcNav-border').css("opacity","0.5");
         });
+        $('#showContent').click(function(){
+          var toggeOnly = $('#toggeOnly');
+          // 切換模式
+          if(toggeOnly.css('opacity') === '0')
+          {
+            toggeOnly.css({
+              'opacity': '1',
+            });
+          }
+          else
+          {
+            toggeOnly.css({
+              'opacity': '0',
+            });
+          }
+          // toggle text transform
+          $('.navbar-nav').toggleClass("active");
+          // toggle aria-expanded = X switch
+          $(this).attr('aria-expanded', function (i, attr) {
+          return attr == 'true' ? 'false' : 'true'});
+        });
+        //scroll toggle navRight
+        $('#well').scroll(function() {
+          console.log("ssss");
+          if ($('#well').scrollTop() > 100){
+            $('#scrollToggle').removeClass("scrollDown").addClass("navHide");
+              $('#navbarCamelotPC').removeClass("navHide");
+              $('#navToggle').removeClass("navHide");
+          }
+          else {
+            $('#scrollToggle').addClass("scrollDown").removeClass("navHide");
+              $('#navbarCamelotPC').addClass( "navHide")
+              $('#navToggle').addClass("navHide");
+          }
+              });
+        //scroll toggle navRight
       });
     </script>
     <!-- pc navRight hover -->
