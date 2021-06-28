@@ -630,10 +630,11 @@
   .priceMarginSetBus{
     margin: 4rem 3rem 3rem 5rem;
   }
-  .priceAboutUs{
-    margin-left: 17rem;
-  }
   
+  .linkPosSet{
+    position: absolute;
+    bottom: -4rem;
+  }
   .priceHr{
     margin: 2rem 0;
   }
@@ -1212,6 +1213,20 @@
   .navHide{
     display: none !important;
   }
+  .scrollDown{
+    border-right: 2px solid var(--text-color);
+    position: absolute;
+    right: 17vw;
+    height: 54vh;
+    top: 7rem;
+  
+  }
+  .scrollDownText{
+    position: absolute;
+    bottom: -6rem;
+    left: -18px;
+    text-align: center;
+  }
   .well {
       scroll-snap-type: y mandatory;
       overflow-y: scroll;
@@ -1323,7 +1338,18 @@
     height: 80%;
     position: relative;
   }
-
+  .switchPrice{
+    position: absolute;
+    right: 1rem;
+    top: -1.25rem;
+  }
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: var(--main-border);
+  }
+  .nav-pills .nav-link{
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
   .secPriceBorder{
       border-bottom: 1px solid var(--text-color);
       border-top: 1px solid var(--text-color);
@@ -1373,7 +1399,7 @@
   .secPriceTitle{
     font-size: 2.5rem;
     position: absolute;
-    margin-top: 8%;
+    margin-top: 7%;
     margin-left: -2rem;
     align-items: center;
     text-align: start;
