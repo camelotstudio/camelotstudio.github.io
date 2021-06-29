@@ -860,11 +860,19 @@
     cursor: pointer;
   }
   .shareConternt{
-    height: 64vh;
+    height: calc(100vh - 4.5rem);
     overflow: scroll;
   }
   .shareConterntPadding{
     padding: 2rem;
+    background-color: var(--main-title);
+    color: #fff;
+  }
+  .scrollDownAddBarTitle{
+    position: absolute;
+    top: 1.5rem;
+    left: 40%;
+    font-size: 1.5rem;
   }
   .shareTag{
     position: absolute;
