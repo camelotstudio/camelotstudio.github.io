@@ -26,6 +26,7 @@
     --link-visited-color: #2320B4; 
     --opacity-color: rgba(255,255,255,0.3);
     --opacity-color-hover: rgba(255,255,255,0.7);
+    --opacity-compared: rgba(0,0,0,0.12);
     --main-title:#2064B4;
     --main-border:#2064B4;
     --about-color-green:#20B47F;
@@ -40,6 +41,7 @@
     --link-visited-color: #71B2FF;
     --opacity-color: rgba(0,0,0,0.3);
     --opacity-color-hover: rgba(0,0,0,0.7);
+    --opacity-compared: rgba(255,255,255,0.12);
     --main-title:#155E6B;
     --main-border:#20B47F;
     --about-color-green:#34E3A5;
@@ -605,6 +607,7 @@
   
   .p-indent{
     text-indent:2em;
+    line-height: 2;
   }
   .le-space{
     letter-spacing: .1em;
@@ -819,11 +822,9 @@
       }
    }
   
-   .mt5rem{
-     margin-top: 4.5rem;
-   }
+
    .h-100vh{
-     height: calc(100vh - 4.5rem);
+     height: calc(100vh + 4.5em);
      overflow: hidden;
    }
   .titleImgSet{
@@ -860,19 +861,66 @@
     cursor: pointer;
   }
   .shareConternt{
-    height: calc(100vh - 4.5rem);
+    height: calc(100vh + 4.5em);
     overflow: scroll;
   }
+  .mt5rem{
+    margin-top: 4.5rem;
+  }
+
   .shareConterntPadding{
     padding: 2rem;
-    background-color: var(--main-title);
-    color: #fff;
   }
+  .sourceBorderBG{
+    border: 1px solid var(--text-color);
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top:1em;
+    left:1em;
+    z-index: -1;
+  }
+  .sourceBorder{
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    background-color: var(--opacity-compared);
+  }
+  .sourceMadeByImg{
+    margin: 10vh auto 1rem auto;
+    text-align: center;
+  }
+  .MadeBy{
+    width: 70%;
+    margin: 1rem auto 1rem auto;
+   line-height: 2.5;
+  }
+  .MadeByHr{
+    margin: 0 auto;
+    width: 85%;
+  }
+  .similarSource{
+    padding: .7rem;
+    margin-top: 7rem;
+    margin-left: -0.75rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    letter-spacing: 0.35rem;
+    width: 50%;
+    text-align: center;
+    color: var(--background-color);
+    background-color: var(--main-border);
+  }
+
   .scrollDownAddBarTitle{
     position: absolute;
     top: 1.5rem;
-    left: 40%;
+    left: calc(50% - 2.5rem);
     font-size: 1.5rem;
+  }
+  .scrollDownShow{
+    background-color: var(--background-color) !important;
+    height: 4.5rem;
   }
   .shareTag{
     position: absolute;
@@ -890,6 +938,7 @@
     opacity: 0.6;
     color: #fff;
   }
+  
   
   
   .businessDesignBG-Mo{
@@ -1208,8 +1257,6 @@
     right: 0;
     opacity: 0;
   }
-  
-  
   .soureText{
     position: absolute;
     height: 100%; 

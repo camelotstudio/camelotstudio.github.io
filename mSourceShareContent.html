@@ -29,39 +29,39 @@
         </div>
       </div>
       -->
-      <div id="scrollDownShow" class="navbar-wrapper">
-        <div class="navbar fixed-top py-0">
+      <div id="scrollDownShow" class="navHide">
+        <div class="navbar scrollDownShow fixed-top py-0">
           <!-- .container -->
-          <div class="container">
             <a href="javascript:history.back()" class="shareBack text-decoration-none">〈 返回</a>
-            <div class="scrollDownAddBarTitle">作品集</div>
-          </div>
+            <div class="scrollDownAddBarTitle">資源分享</div>
           <!-- .container -->
         </div>
         <!-- .navbar -->
       </div>
       <!-- .nav -->
     </header>
-		<section class="h-100vh mt5rem p-relative">
+    <a id="scrollDownHide" href="javascript:history.back()" class="shareBack text-decoration-none">〈 返回</a>
+    <section class="h-100vh p-relative">
       <div class="shareConternt">
-			<div class="titleImgSet">
-				<img src="./assets/img/mebNew.svg" alt="">
-				<section class="shareTitle">
-					<h1>Ellen Macpherson</h1>
-			 </section>
-			 <div class="shareTag"><span class="badge main-title">＃New</span></div>
-			</div>
-			
-				<div class="shareConterntPadding">
-					<p class="p-indent fs-5">信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制。</p>
-					<p class="p-indent fs-5">HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，權授予您信任的人，以及讓配件自信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭</p>
-					<div class="row">
-						<div class="col-4 text-end">類似文章</div>
-						<div class="col-8"><p>第二個歐姬桑與電腦 2020.1.2</p><p>第二個歐姬桑與電腦 2020.1.2</p><p>第二個歐姬桑與電腦 2020.1.2</p></div>
-					</div>
-				</div>
-			</div>
-		</section>
+        <div class="titleImgSet">
+          <img src="./assets/img/mebNew.svg" alt="">
+          <section class="shareTitle">
+            <h1>Ellen Macpherson</h1>
+         </section>
+         <div class="shareTag"><span class="badge main-title">＃New</span></div>
+        </div>
+        
+          <div class="shareConterntPadding main-title">
+            <p class="p-indent fs-5">信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制。</p>
+            <p class="p-indent fs-5">HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，權授予您信任的人，以及讓配件自信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭</p>
+            <div class="row">
+              <div class="col-4 text-end">類似文章</div>
+              <div class="col-8"><p>第二個歐姬桑與電腦 2020.1.2</p><p>第二個歐姬桑與電腦 2020.1.2</p><p>第二個歐姬桑與電腦 2020.1.2</p></div>
+            </div>
+          </div>
+      </div>
+    </section>
+  
     <!-- Script -->
     <script src="vendor/jquery-3.6.0.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -84,23 +84,22 @@
             document.documentElement.setAttribute('data-theme', targetTheme)
             localStorage.setItem('theme', targetTheme);
         };
-
     </script>
-    <!-- menuToggle -->
     <script>
-      const navLinks = document.querySelectorAll('.nav-item')
-      const menuToggle = document.getElementById('navbarCamelot')
-      const bsCollapse = new bootstrap.Collapse(menuToggle)
-      navLinks.forEach((l) => {
-        l.addEventListener('click', () => { bsCollapse.toggle() })
-      });
-      $(function () {
-        $(document).scroll(function () {
-          var $nav = $(".fixed-top");
-          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        });
+      $(document).ready(function(){
+        $('.shareConternt').scroll(function() {
+          console.log("ssss");
+          if ($('.shareConternt').scrollTop() > 100){
+              $('#scrollDownShow').removeClass("navHide");
+              $('#scrollDownHide').addClass("navHide");
+          }
+          else {
+            $('#scrollDownShow').addClass("navHide");
+            $('#scrollDownHide').removeClass("navHide");
+          }
+              });
+        //scroll toggle navRight
       });
     </script>
-    <!-- menuToggle -->
   </body>
 </html>

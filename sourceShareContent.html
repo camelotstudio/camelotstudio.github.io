@@ -20,7 +20,6 @@
   </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <body>
-
     <header>
       <!--
       <div class="d-md-none imgMoblieLayer01 imgMoblieBGSet">
@@ -29,8 +28,8 @@
         </div>
       </div>
       -->
-      <div class="navbar-wrapper">
-        <div class="navbar fixed-top py-0">
+      <div>
+        <div class="navbar scrollDownShow fixed-top py-0">
           <!-- .container -->
           <div class="container">
             <a href="index.html" class="navbar-brand"><div class="logo"></div></a>
@@ -44,23 +43,34 @@
         </div>
         <!-- .navbar -->
       </div>
+      <div id="scrollDownShow" class="navHide">
+        <div class="navbar scrollDownShow  mt5rem fixed-top py-0">
+          <!-- .container -->
+          <div class="container">
+            <a href="javascript:history.back()" class="text-white text-decoration-none">〈 返回</a>
+              <div class="scrollDownAddBarTitle">資源分享</div> 
+          </div>
+          <!-- .container -->
+        </div>
+      </div>
+    
       <nav>
         <div id="navbarCamelot" class="navbar-collapse collapse show">
           <ul id="main-menu" class="navbar-nav navbar-container">
             <li class="nav-item">
-              <a href="#webDesign" class="nav-link">網頁設計</a>
+              <a href="index.html#webDesign" class="nav-link">網頁設計</a>
             </li>
             <li class="nav-item">
-              <a href="#businessDesgin" class="nav-link">商業設計</a>
+              <a href="index.html#businessDesgin" class="nav-link">商業設計</a>
             </li>
             <li class="nav-item">
-              <a href="#aboutUs" class="nav-link">關於我們</a>
+              <a href="index.html#aboutUs" class="nav-link">關於我們</a>
             </li>
             <li class="nav-item">
-              <a href="#works" class="nav-link">作品集</a>
+              <a href="index.html#works" class="nav-link">作品集</a>
             </li>
             <li class="nav-item">
-              <a href="#sourceShare" class="nav-link">技術分享</a>
+              <a href="index.html#sourceShare" class="nav-link">技術分享</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">客戶登入</a>
@@ -78,34 +88,48 @@
       </nav>
       <!-- .nav -->
     </header>
-    <div class="container">
-        <section class="p-relative mt5rem">
-			<a href="javascript:history.back()" class="shareBack fs-3 text-decoration-none">〈 返回</a>
-			</div>
-				<div class="container">
-                    <div class="col-md-6 col-sm-12" style="margin: 0 auto;">
-                      <img src="./assets/img/mebNew.svg" width="100%" height="auto" alt="">
-                    </div>
-      
-                    <div class="col-md-6 col-sm-12" style="margin: 3rem auto;">
-                      <h1 class="fw-bold">TITLE</h1>
-                      <div class="text-small">2020.06.15</div>
-                      <hr>
-                      <div class="my-3">
-                        <span class="badge main-title">＃YEET</span>
-                        <span class="badge main-title">＃YEET</span>
-                        <span class="badge main-title">＃YEET</span>
-                      </div>
-                      <p style="text-indent: 2em; ">信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制。</p>
-                      <p style="text-indent: 2em; ">HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，權授予您信任的人，以及讓配件自信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭</p>
-                      <div class="row mt-5">
-						<div class="col-4 text-end">類似文章</div>
-						<div class="col-8"><p>第二個歐姬桑與電腦 2020.1.2</p><p>第二個歐姬桑與電腦 2020.1.2</p><p>第二個歐姬桑與電腦 2020.1.2</p></div>
-					  </div>
-                    </div>
-                  </div>
+    
+      <section class=" mt5rem">
+        <div class="container p-relative">
+        <a id="scrollDownHide" href="javascript:history.back()" class="shareBack text-decoration-none">〈 返回</a>
+
+          <div class="p-relative">
+            <img src="./assets/img/mebNew.svg" alt="">
+            <section class="shareTitle">
+              <h1>Ellen Macpherson</h1>
+           </section>
+           <div class="shareTag"><span class="badge main-title">＃New</span></div>
+          </div>
+            <div class="shareConterntPadding row p-relative">
+              <div class="col-xl-9 col-lg-9 shareConterntPadding">
+                <p class="p-indent  fs-5">信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制。</p>
+                <p class="p-indent fs-5">HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，權授予您信任的人，以及讓配件自信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭</p>
+                <p class="p-indent fs-5">HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，權授予您信任的人，以及讓配件自信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭</p>
+                <p class="p-indent fs-5">HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，權授予您信任的人，以及讓配件自信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭</p>
+                <p style="text-align-last: right;">最後一次編輯: 2020.1.1</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-5">
+                  <a type="button" class="btn btn-light text-color text-dark" href="">下一篇文章 →</a>
+                </div>
+                
+              </div>
+              <div class="col-xl-3 col-lg-3 p-relative sourceBorder">
+                <div class="sourceMadeByImg">
+                  <img src="./assets/img/meb03.svg" width="100px" height="100px" style="border-radius: 50%;" alt="">
+                  <p class="MadeBy" style="letter-spacing: .55rem;">發布人ＸＸＸ</p>
+                  <hr class="MadeByHr mt-2 mb-2">
+                  <p class="MadeBy" style="text-align-last: left;">以及讓配件自動執行操作
+                    。透過家庭中樞，權授予您信任
+                    的人，以及讓配件自動執行操作</p>
+                </div>
+                <div class="similarSource">類似文章</div>
+                <p class="MadeBy">第二個歐姬桑與電腦 </p>
+                <p class="MadeBy">第二個歐姬桑與電腦 </p>
+                <p class="MadeBy">第二個歐姬桑與電腦 </p>
+                <div class="sourceBorderBG"></div>
+              </div>
+            </div>
+          </div>
 		</section>
-    </div>
     <!-- Script -->
     <script src="vendor/jquery-3.6.0.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -130,8 +154,7 @@
         };
 
     </script>
-    <!-- menuToggle -->
-    <script>
+     <script>
       const navLinks = document.querySelectorAll('.nav-item')
       const menuToggle = document.getElementById('navbarCamelot')
       const bsCollapse = new bootstrap.Collapse(menuToggle)
@@ -145,6 +168,21 @@
         });
       });
     </script>
-    <!-- menuToggle -->
+    <script>
+      $(document).ready(function(){
+        $(window).scroll(function() {
+          console.log("ssss");
+          if ($(window).scrollTop() > 100){
+              $('#scrollDownShow').removeClass("navHide");
+              $('#scrollDownHide').addClass("navHide");
+          }
+          else {
+            $('#scrollDownShow').addClass("navHide");
+            $('#scrollDownHide').removeClass("navHide");
+          }
+        });
+        //scroll toggle navRight
+      });
+    </script>
   </body>
 </html>
