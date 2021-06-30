@@ -77,6 +77,12 @@
   .main-border{
     color: var(--main-border);
   }
+  .text-color{
+    color: var(--text-color);
+  }
+  .background-color{
+    color: var(--background-color);
+  }
   [data-theme='dark'] .form-control {
     background-color: rgba(0, 0, 0, 0.6);
     border-color: rgba(0, 0, 0, 0.6);
@@ -838,8 +844,8 @@
     overflow: hidden;
     position: relative;
   }
-  .h-100vh img{
-   opacity: 0.5;
+  .imgMask{
+    opacity: 0.5;
    width: 100vw;
    object-fit: cover;
    background-repeat: no-repeat;
@@ -937,11 +943,9 @@
     top: 2rem;
     left:1rem;
     z-index: 1;
-    color: var(--text-color);
   }
   .shareBack:hover{
     opacity: 0.6;
-    color: var(--text-color);
   }
   
   
@@ -1646,3 +1650,30 @@
       padding: 5em;
   }
   /* pcHOME */
+  .splide__slide.is-active img{
+    height: 30vh !important;
+  }
+  .splide__slide{
+    overflow: hidden;
+  }
+  .splide__slide:not(.is-active) img{
+    margin-top: 1vh;
+    height: 28vh !important;
+  }
+  .workStatsGreen{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #00C850;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+  .workStatsGray{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #C7C7C7;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+  .worksDottedLine{
+    border-top: 1px dotted var(--main-border);
+  }
