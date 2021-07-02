@@ -611,7 +611,7 @@
   
   .p-indent{
     text-indent:2em;
-    line-height: 2;
+    line-height: 1.5;
   }
   .le-space{
     letter-spacing: .1em;
@@ -899,7 +899,7 @@
   }
   .sourceMadeByImg{
     margin: 10vh auto 1rem auto;
-    text-align: center;
+    
   }
   .MadeBy{
     width: 70%;
