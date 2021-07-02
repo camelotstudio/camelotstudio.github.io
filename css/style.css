@@ -27,11 +27,13 @@
     --opacity-color: rgba(255,255,255,0.3);
     --opacity-color-hover: rgba(255,255,255,0.7);
     --opacity-compared: #EDEDED;
+    --compared: #1F1F1F;
     --main-title:#2064B4;
     --main-border:#2064B4;
     --about-color-green:#20B47F;
     --about-color-blue:#2064B4;
     --about-color-three:#155E6B;
+    --works-content-footer:#DDF1F6;
   }
   
   html[data-theme='dark'] {
@@ -42,11 +44,13 @@
     --opacity-color: rgba(0,0,0,0.3);
     --opacity-color-hover: rgba(0,0,0,0.7);
     --opacity-compared: #1F1F1F;
+    --compared: #F2BC31;
     --main-title:#155E6B;
     --main-border:#20B47F;
     --about-color-green:#34E3A5;
     --about-color-blue:#1578ED;
     --about-color-three:#26A5BC;
+    --works-content-footer:#000;
   }
   
   body {
@@ -82,6 +86,12 @@
   }
   .background-color{
     color: var(--background-color);
+  }
+  .background-color{
+    color: var(--background-color);
+  }
+  .works-content-footer{
+    background-color: var(--works-content-footer);
   }
   [data-theme='dark'] .form-control {
     background-color: rgba(0, 0, 0, 0.6);
@@ -926,7 +936,6 @@
 
   .scrollDownAddBarTitle{
     position: absolute;
-    top: 1.5rem;
     left: calc(50% - 2.5rem);
     font-size: 1.5rem;
   }
@@ -941,7 +950,6 @@
   }
   .shareBack{
     position: absolute;
-    top: 2rem;
     left:1rem;
     z-index: 1;
   }
@@ -1658,8 +1666,12 @@
     overflow: hidden;
   }
   .splide__slide:not(.is-active) img{
+    opacity: 0.6;
+  }
+  .splide__slide:not(.is-active) {
     margin-top: 1vh;
     height: 28vh !important;
+    background-color: black;
   }
   .workStatsGreen{
     height: 1.5rem;
@@ -1682,4 +1694,12 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+  }
+  .scrollDownShowSwitch{
+    position: absolute;
+    right: .5em;
+  }
+  .form-check-input:checked{
+    background-color: var(--compared);
+    border-color: var(--compared);
   }
