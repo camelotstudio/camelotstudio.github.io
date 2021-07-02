@@ -26,7 +26,7 @@
     --link-visited-color: #2320B4; 
     --opacity-color: rgba(255,255,255,0.3);
     --opacity-color-hover: rgba(255,255,255,0.7);
-    --opacity-compared: rgba(0,0,0,0.12);
+    --opacity-compared: #EDEDED;
     --main-title:#2064B4;
     --main-border:#2064B4;
     --about-color-green:#20B47F;
@@ -41,7 +41,7 @@
     --link-visited-color: #71B2FF;
     --opacity-color: rgba(0,0,0,0.3);
     --opacity-color-hover: rgba(0,0,0,0.7);
-    --opacity-compared: rgba(255,255,255,0.12);
+    --opacity-compared: #1F1F1F;
     --main-title:#155E6B;
     --main-border:#20B47F;
     --about-color-green:#34E3A5;
@@ -208,8 +208,8 @@
     height:4.5rem;
     }
     .navbar-brand{
-      padding-top: .5rem !important;
-      padding-bottom: .5rem !important;
+       /* padding-top: .5rem !important;
+      padding-bottom: .5rem !important;*/
     }
   }
   @media (max-width: 415px){
@@ -855,7 +855,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    color: var(--text-color);
     transform: translate(-50%, -50%);
   }
   .sharePCImg{
@@ -871,10 +870,7 @@
   a {
     cursor: pointer;
   }
-  .shareConternt{
-    height: calc(100vh + 4.5em);
-    overflow: scroll;
-  }
+
   .mt5rem{
     margin-top: 4.5rem;
   }
@@ -899,7 +895,7 @@
   }
   .sourceMadeByImg{
     margin: 10vh auto 1rem auto;
-    
+    text-align: center;
   }
   .MadeBy{
     width: 70%;
@@ -909,6 +905,11 @@
   .MadeByHr{
     margin: 0 auto;
     width: 85%;
+  }
+  .simillarContent{
+    width: 70%;
+    margin: 1rem auto 0 auto;
+   line-height: 2.5;
   }
   .similarSource{
     padding: .7rem;
@@ -1676,4 +1677,9 @@
   }
   .worksDottedLine{
     border-top: 1px dotted var(--main-border);
+  }
+  .textOverflow{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }

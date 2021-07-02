@@ -40,9 +40,8 @@
       </div>
       <!-- .nav -->
     </header>
-    <a id="scrollDownHide" href="javascript:history.back()" class="shareBack text-decoration-none">〈 返回</a>
-    <section class="h-100vh p-relative">
-      <div class="shareConternt">
+    <section class="text-white">
+      <a id="scrollDownHide" href="javascript:history.back()" class="shareBack text-decoration-none">〈 返回</a>
         <div class="titleImgSet">
           <img class="imgMask" src="./assets/img/mebNew.svg" alt="">
           <section class="shareTitle">
@@ -52,14 +51,26 @@
         </div>
         
           <div class="shareConterntPadding main-title">
-            <p class="p-indent fs-5">信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制。</p>
-            <p class="p-indent fs-5">HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，權授予您信任的人，以及讓配件自信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭</p>
+            <div class="mb-5">
+              <p class="p-indent">信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制。</p>
+              <p class="p-indent">信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制。</p>
+              <p class="p-indent">HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭中樞，權授予您信任的人，以及讓配件自信任的人，以及讓配件自動執行操作。透過家庭中樞，您可以從遠端控制 HomeKit 配件、將存取權授予您信任的人，以及讓配件自動執行操作。透過家庭</p>
+            </div>
             <div class="row">
               <div class="col-4 text-end">類似文章</div>
-              <div class="col-8"><p>第二個歐姬桑與電腦 2020.1.2</p><p>第二個歐姬桑與電腦 2020.1.2</p><p>第二個歐姬桑與電腦 2020.1.2</p></div>
+              <div class="col-8">
+                <p class="mb-4 textOverflow"> 第二個歐姬桑與zxczxczxccccccccccccccccccc電腦
+                  <br> <small class="float-end">2020.1.2</small>
+                </p>
+                <p class="mb-4 textOverflow"> 第二個歐姬桑與zxczxczxccccccccccccccccccc電腦
+                  <br> <small class="float-end">2020.1.2</small>
+                </p>
+                <p class="mb-4 textOverflow"> 第二個歐姬桑與zxczxczxccccccccccccccccccc電腦
+                  <br> <small class="float-end">2020.1.2</small>
+                </p>
+              </div>
             </div>
           </div>
-      </div>
     </section>
   
     <!-- Script -->
@@ -87,9 +98,9 @@
     </script>
     <script>
       $(document).ready(function(){
-        $('.shareConternt').scroll(function() {
+        $(window).scroll(function() {
           console.log("ssss");
-          if ($('.shareConternt').scrollTop() > 100){
+          if ($(window).scrollTop() > 100){
               $('#scrollDownShow').removeClass("navHide");
               $('#scrollDownHide').addClass("navHide");
           }
