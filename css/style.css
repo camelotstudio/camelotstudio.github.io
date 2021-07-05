@@ -841,7 +841,7 @@
    }
   .titleImgSet{
     height: 23vh;
-    width: 100vw;
+    width: 100%;
     background: black;
     overflow: hidden;
     position: relative;
@@ -948,7 +948,7 @@
   }
   .shareBack{
     position: absolute;
-    left:1rem;
+    left:1.2rem;
     z-index: 1;
   }
   .shareBack:hover{
@@ -1712,4 +1712,25 @@
     background-color: var(--text-color);
     border-color: var(--text-color);
   }
-  
+  .backCircleOutline{
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .backIcon {
+    width: 24px;
+    height: 24px;
+  }
+  [data-theme='dark'] .backCircleOutline{
+    background-image: url("/assets/img/dark-step/chevron-back-circle-outline.svg");
+  }
+  [data-theme='dark'] .backIcon{
+    background-image: url("/assets/img/dark-step/chevron-back.svg");
+  }
+  [data-theme='light'] .backCircleOutline{
+    background-image: url("/assets/img/light-step/chevron-back-circle-outline.svg");
+  }
+  [data-theme='light'] .backIcon{
+    background-image: url("/assets/img/light-step/chevron-back.svg");
+  }
