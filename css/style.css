@@ -1268,7 +1268,7 @@
   .workTextPC{
     position: absolute;
     height: 100%; 
-    width: 35%;
+    /*width: 35%;*/
     background-color: rgba(0, 0, 0, 0.5);
     right: 0;
     opacity: 0;
@@ -1610,7 +1610,7 @@
     font-size: 3rem;
   }
   .aboutSevMagin{
-    margin: 1rem 3rem 1rem 6rem;
+    margin: 1rem 4rem 1rem 4rem;
   }
   .aboutSevLineHeight{
     line-height: 3.5rem;
@@ -1641,6 +1641,8 @@
   
   .panel:nth-child(5) {
       padding: 5em;
+      overflow: hidden;
+
   }
   .workTitle{
     font-size: 3rem;
@@ -1734,3 +1736,123 @@
   [data-theme='light'] .backIcon{
     background-image: url("/assets/img/light-step/chevron-back.svg");
   }
+.indexFontSize{
+  font-size: 1.5rem;
+}
+.aboutFontSize{
+  font-size: 1.25rem;
+}
+.indexMarginSet{
+  margin: 3rem;
+}
+@media (max-width: 1590px){
+  .indexFontSize{
+    font-size: 1.35rem;
+  }
+  .businessDesignBG-PC{
+    height: 90%;
+  }
+  .aboutFontSize{
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1450px){
+  .secBorder{
+    margin: 4em auto 4em 7%;
+  }
+  .webDesignBG-PC{
+    height: 95%;
+  }
+  .businessDesignBG-PC{
+    height: 85%;
+  }
+  .priceImgPC{
+    width: calc(54% + 1.5em);
+  }
+  .aboutSevLineHeight{
+    line-height: 2.5rem;
+  }
+}
+@media (max-width: 1357px){
+  .secBorder{
+    margin: 3em auto 3em 3%;
+  }
+  .webDesignBG-PC{
+    height: 90%;
+  }
+  .businessDesignBG-PC{
+    height: 80%;
+  }
+  .indexMarginSet{
+    margin: 2rem;
+  }
+}
+@media (max-width: 1320px){
+  .secBorder{
+    margin: 3em auto 3em 3%;
+    width: 70vw;
+  }
+  .webDesignBG-PC{
+    height: 90%;
+  }
+  .businessDesignBG-PC{
+    height: 75%;
+  }
+  .indexMarginSet{
+    margin: 3rem;
+  }
+  .priceImgPC{
+    width: calc(53% + 1.5em);
+  }
+}
+@media (max-width: 1200px){
+  .businessDesignBG-PC{
+    height: 70%;
+  }
+  .webDesignBG-PC{
+    height: 85%;
+  }
+}
+@media (max-width: 1220px){
+  
+  .indexMarginSet{
+    margin: 2.5rem;
+  }
+  .priceImgPC{
+    width: calc(52% + 1.5em);
+  }
+}
+@media (max-width: 1130px){
+  .secBorder{
+    margin: 2em auto 2em 0;
+  }
+  .indexMarginSet{
+    margin: 2.5rem;
+  }
+  .webDesignBG-PC{
+    height: 80%;
+  }
+  .businessDesignBG-PC{
+    height: 65%;
+  }
+  .priceImgPC{
+    width: calc(50% + 1.5em);
+  }
+  .aboutSevLineHeight{
+    line-height: 2rem;
+  }
+}
+@media (max-width: 1040px){
+  .secBorder{
+    margin: 1.5em auto 1.5em 0;
+  }
+  .indexMarginSet{
+    margin: 2.3rem;
+  }
+  .webDesignBG-PC{
+    height: 75%;
+  }
+  .priceImgPC{
+    width: calc(49% + 1.5em);
+  }
+}
