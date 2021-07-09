@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="一家位於高雄的設計工作室，服務包括網站設計、應用程式設計、企業識別系統、商業設計、學術演講直播與影片後製。">
+    <meta name="keywords" content="卡美洛工作室,網站設計,網頁設計,應用程式設計,App設計,客製化設計,SEO,搜尋引擎最佳化,商業設計,海報設計,企業識別系統設計,企業識別,CI,CIS,吉祥物設計,活動網站設計,直播,演講直播,客製化直播,影片後製">
+    <title>Camelot Studio – 卡美洛工作室</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177302072-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-177302072-1');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script>
+      if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
+        window.location.href = './m.html'
+      }
+  </script>
+  <body style="overflow: hidden;">
+    <header>
+      <div id="navToggle" class="navbar-wrapper">
+        <div class="navbar fixed-top py-0">
+          <!-- .container -->
+          <div class="container">
+            <a href="index.html" class="navbar-brand"><div class="logo"></div></a>
+            <button id="showContent" class="navbar-toggler collapsed" type="button" aria-expanded="false">
+              <div id="nav-icon">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </button>
+          </div>
+          <!-- .container -->
+        </div>
+        <!-- .navbar -->
+      </div>
+      
+      <nav>
+        <div id="navbarCamelotPC" class="pcNavDisplay pcNavbar fixed-right">
+          <ul id="main-menu" class="navbar-nav p-relative">
+            <li class="nav-item navHeight">
+              <a href="#home" class="nav-link pcNav-border ps-2"><div class="pcNavContent">首頁</div></a>
+            </li>
+            <li class="nav-item navHeight">
+              <a href="#webDesign" class="nav-link pcNav-border ps-2"><div class="pcNavContent">網頁設計</div></a>
+            </li>
+            <li class="nav-item navHeight">
+              <a href="#businessDesgin" class="nav-link pcNav-border ps-2"><div class="pcNavContent">商業設計</div></a>
+            </li>
+            <li class="nav-item navHeight">
+              <a href="#Price" class="nav-link pcNav-border ps-2"><div class="pcNavContent">價目表</div></a>
+            </li>
+            <li class="nav-item navHeight">
+              <a href="#aboutUs" class="nav-link pcNav-border ps-2"><div class="pcNavContent">關於我們</div></a>
+            </li>
+            <li class="nav-item navHeight">
+              <a href="#works" class="nav-link pcNav-border ps-2"><div class="pcNavContent">作品集</div></a>
+            </li>
+            <li class="nav-item navHeight">
+              <a href="#sourceShare" class="nav-link pcNav-border ps-2"><div class="pcNavContent">技術分享</div></a>
+            </li>
+            <li class="nav-item navHeight">
+              <a href="#" class="nav-link pcNav-border ps-2"><div class="pcNavContent">客戶登入</div></a>
+            </li>
+            <li id="toggeOnly" class="nav-item">
+              <div class="nav-link text-end">
+                <p>切換閱讀模式</p>
+                <div id="theme-toggle" class="form-check form-switch">
+                  <input class="form-check-input float-end" type="checkbox" id="flexSwitchCheckChecked" checked>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- .nav -->
+    </header>
+    <!-- PC -->
+      <!-- home -->
+      <section class="client">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-3 col-lg-4 col-md-6">
+    
+            </div>
+            <div class="col-xxl-3 col-lg-4 col-md-6"></div>
+            <div class="col-xxl-3 col-lg-4 col-md-6"></div>
+            <div class="col-xxl-3 col-lg-4 col-md-6"></div>
+          </div>
+        </div>
+        <div class="clientBG"></div>
+      </section>
+      <!-- home -->
+    <!-- PC -->
+    <!-- Script -->
+    <script src="vendor/jquery-3.6.0.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        var toggle = document.getElementById("theme-toggle");
+
+        var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        if (storedTheme)
+            document.documentElement.setAttribute('data-theme', storedTheme)
+
+
+        toggle.onclick = function() {
+            var currentTheme = document.documentElement.getAttribute("data-theme");
+            var targetTheme = "light";
+        
+            if (currentTheme === "light") {
+                targetTheme = "dark";
+            }
+          
+            document.documentElement.setAttribute('data-theme', targetTheme)
+            localStorage.setItem('theme', targetTheme);
+        };
+       
+    </script>
+    <!-- menuToggle -->
+    <script>
+      const navLinks = document.querySelectorAll('.nav-item .pcNavContent')
+      const menuToggle = document.getElementById('navbarCamelotPC')
+      const bsCollapse = new bootstrap.Collapse(menuToggle)
+      navLinks.forEach((l) => {
+        l.addEventListener('click', () => { bsCollapse.innerText().toggle() })
+      });
+
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".fixed-top");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+    <!-- menuToggle -->
+    <!-- work hover -->
+    <script>
+      $(document).ready(function(){
+        $('.workImgSetPC').hover(function(){
+          $(this).find('.workTextPC').css("opacity","1").fadeIn(100);
+          },function(){
+          $(this).find('.workTextPC').css("opacity","0").fadeOut(100);
+        });
+      });
+    </script>
+    <!-- work hover -->
+     <!-- pc navRight hover -->
+     <script>
+      $(document).ready(function(){
+        $('.nav-item').hover(function(){
+          $(this).find('.pcNav-border').css("opacity","1");
+          },function(){
+          $(this).find('.pcNav-border').css("opacity","0.5");
+        });
+        $('#showContent').click(function(){
+          var toggeOnly = $('#toggeOnly');
+          // 切換模式
+          if(toggeOnly.css('opacity') === '0')
+          {
+            toggeOnly.css({
+              'opacity': '1',
+            });
+          }
+          else
+          {
+            toggeOnly.css({
+              'opacity': '0',
+            });
+          }
+          // toggle text transform
+          $('.navbar-nav').toggleClass("active");
+          // toggle aria-expanded = X switch
+          $(this).attr('aria-expanded', function (i, attr) {
+          return attr == 'true' ? 'false' : 'true'});
+        });
+        //scroll toggle navRight
+        
+        //scroll toggle navRight
+      });
+    </script>
+    <!-- pc navRight hover -->
+  </body>
+</html>

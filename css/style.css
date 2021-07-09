@@ -1856,3 +1856,27 @@
     width: calc(49% + 1.5em);
   }
 }
+/*client*/
+.client{
+  height: 100vh;
+  overflow: hidden;
+}
+.clientBG{
+  position: absolute;
+  z-index: -1;
+  width: 105vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80vh;
+  bottom: -12rem;
+  left: -2rem;
+  overflow: hidden;
+}
+[data-theme='dark'] .clientBG{
+  background-image: url("../assets/img/dark-step/clientBG.svg");
+}
+[data-theme='light'] .clientBG{
+  background-image: url("../assets/img/light-step/clientBG.svg");
+}
+
+/*client*/
