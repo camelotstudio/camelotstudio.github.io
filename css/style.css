@@ -21,6 +21,7 @@
   
   html[data-theme='light'] {
     --background-color: #fff;
+    --coustomer-background-color:#DEDEDE;
     --text-color: #272C35;
     --link-color: #2064B4;
     --link-visited-color: #2320B4; 
@@ -37,6 +38,7 @@
   
   html[data-theme='dark'] {
     --background-color: #000;
+    --coustomer-background-color:#000;
     --text-color: #F7F8F8;
     --link-color: #71B2FF;
     --link-visited-color: #71B2FF;
@@ -51,10 +53,7 @@
     --works-content-footer:#000;
   }
   
-  body {
-    background: var(--background-color);
-    color: var(--text-color);
-  }
+  
   
   a {
     color: var(--link-color);
@@ -1880,3 +1879,51 @@
 }
 
 /*client*/
+.coustomerCard{
+  position: absolute;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+  padding: 1rem 1.5rem;
+  z-index: 2;
+}
+.coustomerGray{
+ color: #5E5E5E;
+}
+.progressBar{
+  position: relative;
+  width: 94%;
+  margin: 0.5rem auto;
+  border-bottom: 1px solid #777777;
+
+}
+.progressBarLine{
+  position: absolute;
+  
+  left: 0;
+  margin-top: -1px;
+  height: 2px;
+  
+  z-index: 1;
+}
+.seeMoreTag{
+  position: absolute;
+  top: 114px;
+  padding: 0.5rem 0.5rem 0.3rem 0.8rem;
+  right: 0rem;
+  color: #fff;
+  font-weight: 700;
+  border-bottom-right-radius: 5px;
+  
+  width: 85px;
+  z-index: 1;
+}
+.seeMoreTagTr{
+  position: absolute;
+    left: -1.8rem;
+    margin-top: -0.3rem;
+    width: 0;
+    height: 0;
+    border-bottom: 2.12rem solid transparent;
+    
+}

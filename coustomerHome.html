@@ -24,6 +24,12 @@
         window.location.href = './m.html'
       }
   </script>
+  <style>
+    body {
+    background: var(--coustomer-background-color);
+    color: var(--text-color);
+    }
+  </style>
   <body style="overflow: hidden;">
     <header>
       <div id="navToggle" class="navbar-wrapper">
@@ -43,31 +49,19 @@
       </div>
       
       <nav>
-        <div id="navbarCamelotPC" class="pcNavDisplay pcNavbar fixed-right">
+        <div id="navbarCamelotPC" class="pcNavDisplay pcNavbar fixed-right" style="align-items:unset;padding-top:4rem;">
           <ul id="main-menu" class="navbar-nav p-relative">
             <li class="nav-item navHeight">
-              <a href="#home" class="nav-link pcNav-border ps-2"><div class="pcNavContent">首頁</div></a>
+              <a href="#home" class="nav-link pcNav-border ps-2"><div class="pcNavContent">專案進度</div></a>
             </li>
             <li class="nav-item navHeight">
-              <a href="#webDesign" class="nav-link pcNav-border ps-2"><div class="pcNavContent">網頁設計</div></a>
+              <a href="#webDesign" class="nav-link pcNav-border ps-2"><div class="pcNavContent">進度追蹤</div></a>
             </li>
             <li class="nav-item navHeight">
-              <a href="#businessDesgin" class="nav-link pcNav-border ps-2"><div class="pcNavContent">商業設計</div></a>
+              <a href="#webDesign" class="nav-link pcNav-border ps-2"><div class="pcNavContent">資訊設定</div></a>
             </li>
             <li class="nav-item navHeight">
-              <a href="#Price" class="nav-link pcNav-border ps-2"><div class="pcNavContent">價目表</div></a>
-            </li>
-            <li class="nav-item navHeight">
-              <a href="#aboutUs" class="nav-link pcNav-border ps-2"><div class="pcNavContent">關於我們</div></a>
-            </li>
-            <li class="nav-item navHeight">
-              <a href="#works" class="nav-link pcNav-border ps-2"><div class="pcNavContent">作品集</div></a>
-            </li>
-            <li class="nav-item navHeight">
-              <a href="#sourceShare" class="nav-link pcNav-border ps-2"><div class="pcNavContent">技術分享</div></a>
-            </li>
-            <li class="nav-item navHeight">
-              <a href="#" class="nav-link pcNav-border ps-2"><div class="pcNavContent">客戶登入</div></a>
+              <a href="#webDesign" class="nav-link pcNav-border ps-2"><div class="pcNavContent">登出</div></a>
             </li>
             <li id="toggeOnly" class="nav-item">
               <div class="nav-link text-end">
@@ -84,15 +78,65 @@
     </header>
     <!-- PC -->
       <!-- home -->
-      <section class="client">
-        <div class="container">
+      <section class="client" style="margin: 12vh auto;">
+        <div class="secBorder">
           <div class="row">
-            <div class="col-xxl-3 col-lg-4 col-md-6">
-    
+            <div class="col-lg-4 col-md-6 p-relative">
+              <a class="">
+                <div class="seeMoreTag text-decoration-none" style="background-color: #549BEF;">
+                  <div class="seeMoreTagTr" style="border-right: 1.8rem solid #549BEF;"></div>
+                  詳細資訊
+                </div>
+              </a>
+              <div class="coustomerCard">
+                <div class="row">
+                  <div class="col-6 coustomerGray fw-bold">專案名稱：專案</div>
+                  <div class="col-6 coustomerGray text-end">承辦人：王曉明</div>
+                  <div class="col-12 text-end text-danger">進度87%</div>
+                  <div class="progressBar">
+                    <div class=" progressBarLine" style="width: 80%;border-bottom: 2px solid #549BEF;"></div>
+                  </div>
+                  <small style="color: #DEDEDE;">日期：2021-02-20~2022-.6-25</small>
+                </div>
+              </div>
             </div>
-            <div class="col-xxl-3 col-lg-4 col-md-6"></div>
-            <div class="col-xxl-3 col-lg-4 col-md-6"></div>
-            <div class="col-xxl-3 col-lg-4 col-md-6"></div>
+            <div class="col-lg-4 col-md-6 p-relative">
+              <a class="">
+                <div class="seeMoreTag text-decoration-none" style="letter-spacing: 16px; background-color: #F54646;">
+                  <div class="seeMoreTagTr" style="border-right: 1.8rem solid #F54646;"></div>
+                  回應
+                </div>
+              </a>
+              <div class="coustomerCard">
+                <div class="row">
+                  <div class="col-12 coustomerGray fw-bold">註冊表單:新增欄「作品領域」</div>
+                  <div class="col-12 text-danger mt-2 mb-2">未註冊</div>
+                  
+                  <small class="col-6" style="color: #DEDEDE;">日期：2021-02-20</small>
+                  <div class="col-6 text-end coustomerGray"><span class="text-danger">！</span>待驗收</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-relative">
+              <a class="">
+                <div class="seeMoreTag text-decoration-none" style="background-color: #20B47F;">
+                  <div class="seeMoreTagTr" style="border-right: 1.8rem solid #20B47F;"></div>
+                  詳細資訊
+                </div>
+              </a>
+              <div class="coustomerCard">
+                <div class="row">
+                  <div class="col-6 coustomerGray fw-bold">專案名稱：專案</div>
+                  <div class="col-6 coustomerGray text-end">承辦人：王曉明</div>
+                  <div class="col-12 text-end text-danger">已完成</div>
+                  <div class="progressBar">
+                    <div class=" progressBarLine" style="width: 100%;border-bottom: 2px solid #dc3545;"></div>
+                  </div>
+                  <small style="color: #DEDEDE;">日期：2021-02-20~2022-.6-25</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6"></div>
           </div>
         </div>
         <div class="clientBG"></div>
