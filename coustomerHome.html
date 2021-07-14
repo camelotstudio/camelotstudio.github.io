@@ -83,7 +83,7 @@
       <!-- home -->
       <section class="client" style="margin: 12vh auto;">
         <div class="container" style="margin-right: 15vw;">
-          <a href="" class="text-decoration-none h4 fw-bold">新增需求</a>
+          <a id="coustomerAddCell" class="text-decoration-none h4 fw-bold">新增需求</a>
           <div class="row mt-4">
             <div class="col-lg-4 col-md-6 p-relative mb-5">
               <div class="coustomerCard">
@@ -97,7 +97,7 @@
                   <small style="color: #DEDEDE;">日期：2021-02-20~2022-.6-25</small>
                 </div>
               </div>
-              <a class="">
+              <a id="coustomerEditCell">
                 <div class="seeMoreTag text-decoration-none" style="background-color: #549BEF;">
                   <div class="seeMoreTagTr" style="border-right: 1.8rem solid #549BEF;"></div>
                   詳細資訊
@@ -147,10 +147,10 @@
       </section>
       <!-- home -->
       <!--coustomerAdd-->
-      <div class="coustomerRightModal">
-        <div class="coustomerAdd">
+      <div id="coustomerAdd" class="coustomerRightModal navHide">
+        <div>
           <div class="row">
-            <div class="col-12 text-end my-4 pe-5"><button type="button" class="btn-close mb-3" aria-label="Close"></button></div>
+            <div class="col-12 text-end my-4 pe-5"><button id="coustomerAddClose" type="button" class="btn-close mb-3" aria-label="Close"></button></div>
             <div class="col-4 text-center"><a class=" text-decoration-none" href="">專案進度</a></div>
             <div class="col-4 text-center"><a class=" text-decoration-none" href="">進度追蹤</a></div>
             <div class="col-4 text-center"><a class=" text-decoration-none" href="">新增需求</a></div>
@@ -186,6 +186,58 @@
         </div>
       </div>
       <!--coustomerAdd-->
+      <!--coustomerEdit-->
+      <div id="coustomerEdit" class="coustomerRightModal navHide">
+        <div>
+          <div class="row px-4 py-4">
+            <div class="col-12 text-end"><button id="coustomerEditClose" type="button" class="btn-close" aria-label="Close"></button></div>
+            <small class="col-12">工作包</small>
+            <div class="col-12 fs-4 fw-bold">「工作包名稱」</div>
+            <small class="col-12">截止日期：2021年03月31日（30天後）</small>
+            <hr class="my-3" style="margin-left: 0.725rem;">
+            <div class="col-12 coustomerEditContentHeight">
+              <div><span class="fw-bold">概述：</span><br>工作包概述主要是以簡單文字來敘述專案的這個部分需要調整什麼部分。這裡可以的話可以試著限制字數，或是縮排展開之類的方式，不僅可以節省空間也比較美觀，不過通常這裡的描述文字不會太多，因為通常需要修改的部分都寫在標題</div>
+              <div class="text-danger"><span class="fw-bold">需回應問題:</span><br>工作包概述主要是以簡單文字來敘述專案的這個部分需要調整什麼部分。這裡可以的話可以試著限制字數，或是縮排展開之類的方式，不僅可以節省空間也比較美觀，不過通常這裡的描述文字不會太多，因為通常需要修改的部分都寫在標題</div>
+            </div>
+            <hr class="my-3" style="margin-left: 0.725rem;">
+            <div class="col-5">
+              <div class="coustomerLink text-end">附件：</div>
+            </div>
+            <div class="col-7">
+              <button class="btn text-start" style="background-color: #A7EBCA;">
+                <div class="row">
+                  <div class="col-8">attachment_file.<br>xlsx <span class="float-end">7.35MB</span></div>
+                  <div class="col-4">
+                    <div class="coustomerLinkBtnHr">
+                      <img class="ps-3" src="./assets/img/dark-step/coustomerDownload.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="col-5 mt-4">
+              <div class="coustomerLink text-end">驗收連結：
+              </div>
+            </div>
+            <div class="col-7 mt-4">
+              <button class="btn text-start" style="background-color: #549BEF;">
+                <div class="row">
+                  <div class="col-8">attachment_file.<br>xlsx <span class="float-end">7.35MB</span></div>
+                  <div class="col-4">
+                    <div class="coustomerLinkBtnHr">
+                      <img class="ps-3" src="./assets/img/dark-step/coustomerDownload.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+             
+            
+            <hr class="my-3" style="margin-left: 0.725rem;">
+          </div>
+        </div>
+      </div>
+      <!--coustomerEdit-->
     <!-- PC -->
     <!-- Script -->
     <script src="vendor/jquery-3.6.0.min.js"></script>
@@ -268,9 +320,20 @@
           $(this).attr('aria-expanded', function (i, attr) {
           return attr == 'true' ? 'false' : 'true'});
         });
-        //scroll toggle navRight
-        
-        //scroll toggle navRight
+        //coustomer
+        $('#coustomerAddCell').click(function(){
+          $('#coustomerAdd').removeClass('navHide');
+        });
+        $('#coustomerAddClose').click(function(){
+          $('#coustomerAdd').addClass('navHide');
+        });
+        $('#coustomerEditCell').click(function(){
+          $('#coustomerEdit').removeClass('navHide');
+        });
+        $('#coustomerEditClose').click(function(){
+          $('#coustomerEdit').addClass('navHide');
+        });
+        //coustomer
       });
     </script>
     <!-- pc navRight hover -->
